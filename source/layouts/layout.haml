@@ -1,0 +1,10 @@
+!!!
+%html
+  = partial 'layouts/head'
+  %body
+    = partial 'layouts/header'
+    = yield
+    / Placed at the end of the document so the pages load faster
+    / Flex Slider
+    = partial 'layouts/footer'
+    = partial 'layouts/scripts-footer'

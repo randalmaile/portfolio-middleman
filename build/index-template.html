@@ -1,0 +1,1446 @@
+!!!
+%html
+  %head
+    / Meta Tags
+    %meta{content: "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, user-scalable=no, target-densitydpi=device-dpi", name: "viewport"}/
+    / Page Title
+    %title Multi Facet
+    / Favicon
+    %link{href: "images/favicon.ico", rel: "shortcut icon"}/
+    / Stylesheets
+    %link{href: "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,400italic,600italic", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/fonts.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/font-awesome.min.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/reset.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/styles.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/responsive.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/flexslider.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "stylesheets/jquery.bxslider.css", rel: "stylesheet", type: "text/css"}/
+    / Color Scheme
+    %link#layout-css{href: "stylesheets/layouts/green-layout.css", rel: "stylesheet", type: "text/css"}/
+    / jQuery
+    %script{src: "js/jquery-1.10.2.min.js", type: "text/javascript"}
+    / jQuery Migrate
+    %script{src: "js/jquery-migrate-1.2.1.min.js", type: "text/javascript"}
+    / Modernizr
+    %script{src: "js/modernizr.custom.53842.js", type: "text/javascript"}
+  %body
+    / Main Wrapper
+    #main-body-container
+      / Header
+      %header#header.iconic
+        .width-container
+          / Logo Area
+          .logo
+            %h1
+              MULTI
+              %span.green FACET
+          / Main Navigation Bar
+          #main-nav
+            / Main Navigation Links
+            %ul
+              %li.selected
+                %a#home-button{href: "#main-slider-container"}
+                  %i.icon-home
+                  %span Home
+              %li
+                %a#services-button{href: "#row1"}
+                  %i.icon-cog
+                  %span Services
+              %li
+                %a#about-button{href: "#row2"}
+                  %i.icon-lightbulb
+                  %span About
+              %li
+                %a#team-button{href: "#row3"}
+                  %i.icon-heart
+                  %span Team
+              %li
+                %a#portfolio-button{href: "#row4"}
+                  %i.icon-rocket
+                  %span Portfolio
+              %li
+                %a#clients-button{href: "#row5"}
+                  %i.icon-group
+                  %span Clients
+              %li
+                %a#contact-button{href: "#row6"}
+                  %i.icon-envelope
+                  %span Contact
+              %li.clear
+            .clear
+          .clear
+      / Main Slider Container
+      #main-slider-container
+        %img{alt: "slider-loading-animation", src: "images/loading.gif"}/
+        / Main Slider
+        .flexslider
+          %ul.slides
+            / Slide1
+            %li{style: "background: url('images/slide-placeholder-bg.png');"}
+              / Slide Background
+              .width-container
+                .slider-heading-container
+                  / Slider Top Captions
+                  .main-headings
+                    %h1.main-heading Powerfully Responsive Design
+                    %span.heading-connector1
+                    %h2 Modern flat design with multiple options
+                    %span.heading-connector2
+                  / Slider Sub Captions
+                  .sub-headings
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Your content will look great on any device
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Use predefined options or create your own
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Easy to setup and customize
+                  %button Purchase Now
+            / Slide2
+            %li{style: "background: url('images/slide-placeholder-bg.png');"}
+              / Slide Background
+              .width-container
+                .slider-heading-container
+                  / Slider Top Captions
+                  .main-headings
+                    %h1.main-heading Multipurpose and Customizable
+                    %span.heading-connector1
+                    %h2 Easily setup a professional looking website
+                    %span.heading-connector2
+                  / Slider Sub Captions
+                  .sub-headings
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Your content will look great on any device
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Set up your customized site in no time!
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Perfect for a wide variety of uses
+                  %button Purchase Now
+                %img#slide2-element.slide-element{alt: "slide-element", src: "images/slide2-placeholder-element.png"}/
+                / Floating element
+            / Slide3
+            %li{style: "background: url('images/slide-placeholder-bg.png');"}
+              / Slide Background
+              .width-container
+                .slider-heading-container
+                  / Slider Top Captions
+                  .main-headings
+                    %h1.main-heading HTML5 and CSS3 Validated
+                    %span.heading-connector1
+                    %h2 Clean, well commented code for easy use
+                    %span.heading-connector2
+                  / Slider Sub Captions
+                  .sub-headings
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Super clean code search engines will love
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Pages load quickly, without bottlenecks
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Easy to use even if you’re a newbie
+                  %button Purchase Now
+                %img#slide3-element.slide-element{alt: "slide-element", src: "images/slide3-placeholder-element.png"}/
+                / Floating element
+            / Slide4
+            %li{style: "background: url('images/slide-placeholder-bg.png');"}
+              / Slide Background
+              .width-container
+                .slider-heading-container
+                  / Slider Top Captions
+                  .main-headings
+                    %h1.main-heading Powerful Portfolio Options
+                    %span.heading-connector1
+                    %h2 Display your portfolio in a way that suits you
+                    %span.heading-connector2
+                  / Slider Sub Captions
+                  .sub-headings
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Choose from several layout options
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Showcase your work in a powerful way
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Work looks stunning on multiple devices
+                  %button Purchase Now
+            / Slide5
+            %li{style: "background: url('images/slide-placeholder-bg.png');"}
+              / Slide Background
+              .width-container
+                .slider-heading-container
+                  / Slider Top Captions
+                  .main-headings
+                    %h1.main-heading FontAwesome, Retina Ready
+                    %span.heading-connector1
+                    %h2 Fully responsive, looks stunning on any device
+                    %span.heading-connector2
+                  / Slider Sub Captions
+                  .sub-headings
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Looks beautiful, regardless of the device
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Professional, clean design for crisp display
+                    %h2
+                      %span
+                        %i.icon-chevron-right
+                      Integrated with FontAwesome fonts
+                  %button Purchase Now
+                %img#slide5-element.slide-element{alt: "slide-element", src: "images/slide5-placeholder-element.png"}/
+                / Floating element
+        .progress-bar
+          .bar
+      / Services Row
+      #row1.row
+        .width-container
+          / Row Headings
+          .heading-container
+            .container
+              %table
+                %tr
+                  %td
+                    %h1 Services
+            %h2
+              Rather than trying to do everything well,
+              we decided to just do a few things brilliantly.
+            .clear
+          .content-container
+            / Row Contents
+            .container.left
+              %h3 Our Focus
+              %p
+                We are more than a group of passionate web professionals. We are unique. We focus on delivering
+                solutions that are as simple as they can be and no simpler. That’s the balance. Yes, we can do bells
+                and whistles but that’s not the aim. We focus on the things that keep customers coming back time and
+                time again.
+              / Newsletter Box
+              #newsletter
+                %span KEEP UP WITH THE LATEST TRENDS
+                %br/
+                %span Sign up for our newsletter!
+                .container
+                  %input{name: "", placeholder: "Enter your email address", type: "text", value: ""}/
+                  %button{type: "submit"} GO
+                  .clear
+            .left.last
+              / Rotating Buttons Area
+              .button-container
+                / Rotating Buttons
+                / Rotating Button 1
+                .button1
+                  %button.icon-puzzle-piece
+                  %span.service-arrow
+                / Rotating Button 2
+                .button2
+                  %button.icon-cogs
+                  %span.service-arrow
+                / Rotating Button 3
+                .button3
+                  %button.icon-leaf
+                  %span.service-arrow
+                / Rotating Button 4
+                .button4
+                  %button.icon-rocket
+                  %span.service-arrow
+                / Rotating Button 5
+                .button5
+                  %button.icon-dashboard
+                  %span.service-arrow
+                .clear
+              %span#notched-line
+              / Content Area for Rotating Buttons
+              #service-description-container
+                / Default content area
+                .service-description.default
+                  %h3
+                    Building Trust by Providing Quality
+                  %p
+                    When you need our help, we will be there! No waiting for days for returned emails. No
+                    wondering if your request has been received. We make sure you know you’re special to us and
+                    that your needs are important.
+                  %span
+                / Rotating Button 1 Content Area
+                .service-description.button1
+                  %span.icon-puzzle-piece
+                  %h3
+                    Modern Elegant Design
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae elit enim. Nullam
+                    sagittis elementum est, a condimentum nulla hendrerit ac. Mauris vitae nulla orci. Cras
+                    sollicitudin sapien viverra nisl pretium semper. Donec sed diam ipsum. Etiam nec
+                    sollicitudin metus.
+                / Rotating Button2 Content Area
+                .service-description.button2
+                  %span.icon-cogs
+                  %h3
+                    Responsive Layout
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae elit enim. Nullam
+                    sagittis elementum est, a condimentum nulla hendrerit ac. Mauris vitae nulla orci. Cras
+                    sollicitudin sapien viverra nisl pretium semper. Donec sed diam ipsum. Etiam nec
+                    sollicitudin metus.
+                / Rotating Button3 Content Area
+                .service-description.button3
+                  %span.icon-leaf
+                  %h3
+                    Parallax Design
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae elit enim. Nullam
+                    sagittis elementum est, a condimentum nulla hendrerit ac. Mauris vitae nulla orci. Cras
+                    sollicitudin sapien viverra nisl pretium semper. Donec sed diam ipsum. Etiam nec
+                    sollicitudin metus.
+                / Rotating Button4 Content Area
+                .service-description.button4
+                  %span.icon-rocket
+                  %h3
+                    Powerful Portfolio
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae elit enim. Nullam
+                    sagittis elementum est, a condimentum nulla hendrerit ac. Mauris vitae nulla orci. Cras
+                    sollicitudin sapien viverra nisl pretium semper. Donec sed diam ipsum. Etiam nec
+                    sollicitudin metus.
+                / Rotating Button5 Content Area
+                .service-description.button5
+                  %span.icon-dashboard
+                  %h3
+                    Multipurpose and fun to work with
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae elit enim. Nullam
+                    sagittis elementum est, a condimentum nulla hendrerit ac. Mauris vitae nulla orci. Cras
+                    sollicitudin sapien viverra nisl pretium semper. Donec sed diam ipsum. Etiam nec
+                    sollicitudin metus.
+            .clear
+      / Parallax 1
+      .parallax-container.parallax1
+        %img.parallax-bg{alt: "parallax-background", src: "images/parallax-placeholder-bg.png"}/
+        / Parallax 1 Background
+        .width-container
+          .testimonial-container
+            / Testimonial Area
+            .testimonial
+              %span.quote-mark “
+              / Testimonial
+              %p
+                This is one of the coolest templates.
+                %br/
+                It’s so versatile…even if you don’t know a thing about
+                setting up a website, they make it super easy!
+              %button Button
+            / Testimonial By
+            .testimonial-by-container
+              %div
+                %span.testimonial-by K. Dunne
+                %br/
+                %span.testimonial-by-location Seattle, WA
+                .clear
+            .clear
+      / About Us Row
+      #row2.row
+        .width-container
+          / Row Headings
+          .heading-container
+            .container
+              %table
+                %tr
+                  %td
+                    %h1 About Us
+            %h2 Driven by a passion for perfection and a commitment to doing it right.
+            .clear
+          / Row Contents
+          .content-container
+            .container.left
+              %h3 Who We Are
+              %p
+                We are more than a group of passionate web professionals. We are unique. We focus on delivering
+                solutions that are as simple as they can be and no simpler. That’s the balance. Yes, we can do bells
+                and whistles but that’s not the aim. We focus on the things that keep customers coming back time and
+                time again.
+              %h3 Our Creative Process
+              / Process Section
+              #process-container
+                %ul.process-grid
+                  / Process 1
+                  %li#process1
+                    .process
+                      .process-wrap
+                        .process-info
+                          .process-info-front
+                            %p DEFINE
+                          .process-info-back
+                            %p.fourlines Define the specific problem you want to solve
+                  / Process 2
+                  %li#process2
+                    .process
+                      .process-wrap
+                        .process-info
+                          .process-info-front
+                            %p DESIGN
+                          .process-info-back
+                            %p.fourlines Design the solution that solves the problem
+                  / Process 3
+                  %li#process3
+                    .process
+                      .process-wrap
+                        .process-info
+                          .process-info-front
+                            %p REFINE
+                          .process-info-back
+                            %p.threelines Improve on it and get it right problem
+                  / Process 4
+                  %li#process4
+                    .process
+                      .process-wrap
+                        .process-info
+                          .process-info-front
+                            %p CREATE
+                          .process-info-back
+                            %p.threelines Build the solution and make it shine
+            / Skill Bars Container
+            .container.right.last
+              %h3 Our Skills
+              #skills-container
+                / Skill 1
+                #skill1.skill.empty
+                  .bar
+                  %h4.skill-name WEB DESIGN :: 90%
+                / Skill 2
+                #skill2.skill.empty
+                  .bar
+                  %h4.skill-name HTML / CSS :: 80%
+                / Skill 3
+                #skill3.skill.empty
+                  .bar
+                  %h4.skill-name WORDPRESS :: 60%
+                / Skill 4
+                #skill4.skill.empty
+                  .bar
+                  %h4.skill-name BRANDING :: 85%
+                / Skill 5
+                #skill5.skill.empty
+                  .bar
+                  %h4.skill-name PRINT DESIGN :: 75%
+              / Approaches Container
+              %h3 Our Approach
+              .collapsable-items-container
+                / Approach 1
+                .collapsable-item
+                  .clickable-area
+                    %button +
+                    %h4 Our Mission
+                  .hidden-container
+                    %p
+                      We are goal oriented ad we want you to accomplish your goals. So our commitment is based
+                      around a simple premise. Tell us what you want to achieve. if we don’t achieve that in
+                      the first 6 months, we’ll give you a full refund.
+                / Approach 2
+                .collapsable-item
+                  .clickable-area
+                    %button +
+                    %h4 Our Philosophy
+                  .hidden-container
+                    %p
+                      We are goal oriented ad we want you to accomplish your goals. So our commitment is based
+                      around a simple premise. Tell us what you want to achieve. if we don’t achieve that in
+                      the first 6 months, we’ll give you a full refund.
+                / Approach 3
+                .collapsable-item
+                  .clickable-area
+                    %button +
+                    %h4 Our Commitment to Clients
+                  .hidden-container
+                    %p
+                      We are goal oriented ad we want you to accomplish your goals. So our commitment is based
+                      around a simple premise. Tell us what you want to achieve. if we don’t achieve that in
+                      the first 6 months, we’ll give you a full refund.
+            .clear
+        .clear
+      / The Team Row
+      #row3.row.grey
+        .width-container
+          / Row Headings
+          .heading-container
+            .container
+              %table
+                %tr
+                  %td
+                    %h1 The Team
+            %h2 Meet the people behind the scenes, who ensure your success with their stellar talents.
+            .clear
+          / Row Contents
+          .content-container
+            / Team Members Area
+            #team-container
+              / Team Member 1
+              .team-member
+                / Team Member Image
+                %img{alt: "team-member-image", src: "images/team-member-placeholder.png"}/
+                / Team Member Details
+                .team-member-details
+                  %span.name John Doe
+                  %span.occupation Developer
+                  / Team Member Social Media Links
+                  .links
+                    %a.icon-dribbble{href: "#"}
+                    %a.icon-facebook{href: "#"}
+                    %a.icon-twitter{href: "#"}
+                    %a.icon-linkedin{href: "#"}
+                  .clear
+              / Team Member 2
+              .team-member
+                %img{alt: "team-member-image", src: "images/team-member-placeholder.png"}/
+                / Team Member Details
+                .team-member-details
+                  %span.name Jane Doe
+                  %span.occupation Web Designer
+                  / Team Member Social Media Links
+                  .links
+                    %a.icon-dribbble{href: "#"}
+                    %a.icon-facebook{href: "#"}
+                    %a.icon-twitter{href: "#"}
+                    %a.icon-linkedin{href: "#"}
+                  .clear
+              / Team Member 3
+              .team-member
+                %img{alt: "team-member-image", src: "images/team-member-placeholder.png"}/
+                / Team Member Details
+                .team-member-details
+                  %span.name Joseph Doe
+                  %span.occupation Developer
+                  / Team Member Social Media Links
+                  .links
+                    %a.icon-dribbble{href: "#"}
+                    %a.icon-facebook{href: "#"}
+                    %a.icon-twitter{href: "#"}
+                    %a.icon-linkedin{href: "#"}
+                  .clear
+              / Team Member 4
+              .team-member
+                %img{alt: "team-member-image", src: "images/team-member-placeholder.png"}/
+                / Team Member Details
+                .team-member-details
+                  %span.name Daniel Doe
+                  %span.occupation Creative Director
+                  / Team Member Social Media Links
+                  .links
+                    %a.icon-dribbble{href: "#"}
+                    %a.icon-facebook{href: "#"}
+                    %a.icon-twitter{href: "#"}
+                    %a.icon-linkedin{href: "#"}
+                  .clear
+              .clear
+      / Parallax 2
+      .parallax-container.parallax2
+        %img.parallax-bg{alt: "parallax-background", src: "images/parallax-placeholder-bg.png"}/
+        / Parallax 2 Background
+        / Parallax 2 Content
+        .width-container
+          %h1 YOU'LL BE IN GOOD COMPANY!
+          %h2 (248 to be exact)
+          %p
+            Our client base is growing all the time. We have delivered stunning results for over 248 different projects
+            from start-ups to fast grown companies and they keep coming back for more. That’s the advantage of being
+            driven by results rather than profit.
+          %button Get in touch!
+      / Our Work Row
+      #row4.row
+        .width-container
+          / Row Headings
+          .heading-container
+            .container
+              %table
+                %tr
+                  %td
+                    %h1 Our Work
+            %h2 Have a look at some of the projects we’ve done for our very happy clients.
+            .clear
+          / Row Contents
+          .content-container
+            #gallery-container
+              / Gallery Filters
+              .gallery-options
+                %button.button1.active.filter{"data-filter" => "all"} ALL
+                / Gallery Filter (Only the text "ALL" inside the button can be changed)
+                %button.button2.filter{"data-filter" => "web"} WEB
+                / Gallery Filter
+                %button.button3.filter{"data-filter" => "photography"} PHOTOGRAPHY
+                / Gallery Filter
+                %button.button4.filter{"data-filter" => "print"} PRINT
+                / Gallery Filter
+                %button.button5.filter{"data-filter" => "branding"} BRANDING
+                / Gallery Filter
+              .gallery-options.column-selector
+                %button.button2 2-COLUMNS
+                %button.button3 3-COLUMNS
+                %button.button4.active 4-COLUMNS
+              .clear
+              / Gallery Area
+              %ul#gallery.four-cols
+                / Change this ul's class name to "two-cols", "three-cols" or "four-cols"
+                / Gallery Item 1
+                %li.gallery-item.all.web
+                  / Add filter name as class
+                  .image-area
+                    %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
+                    / Gallery Item Image
+                    .transparent-hover
+                    %span.plus-button
+                    / Gallery Item Description
+                    .gallery-item-description
+                      %p This text could be a brief blurb about the project and your role in creating it.
+                    %button.gallery-show-modal
+                  / Gallery Item Title and Category
+                  %h5 Project Title Here
+                  %span.category Web Design
+                  .gallery-modal-container
+                    .gallery-inner-container.grey
+                      %button.close-button X
+                      .portfolio-modal
+                        .image-area
+                          %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
+                          / Gallery Item Modal Window Image
+                          .portfolio-nav
+                            %button.gallery-prev &lt;
+                            %button.gallery-next &gt;
+                        .details
+                          / Gallery Item Modal Window Title
+                          %h2 Project Detail Title
+                          / Gallery Item Modal Window Content
+                          .project-info
+                            %span Web Design
+                            %span.separator ::
+                            %span February 2013
+                          %p.content
+                            Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                            ipsum
+                            varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                            neque.
+                            Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                            vestibulum
+                            aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                        .collapsable-items-container
+                          / Gallery Item Modal Window Collapsable Info 1
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Client
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Client 1
+                                %li Client 2
+                                %li Client 3
+                          / Gallery Item Modal Window Collapsable Info 2
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Tasks
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Task 1
+                                %li Task 2
+                                %li Task 3
+                          / Gallery Item Modal Window Collapsable Info 3
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Skills
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Web Design &amp; Development
+                                %li HTML, CSS &amp; JavaScript
+                                %li Photoshop &amp; Illustrator
+                / Gallery Item 2
+                %li.gallery-item.all.photography
+                  / Add filter name as class
+                  .image-area
+                    %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
+                    / Gallery Item Image
+                    .transparent-hover
+                    %span.plus-button
+                    / Gallery Item Description
+                    .gallery-item-description
+                      %p This text could be a brief blurb about the project and your role in creating it.
+                    %button.gallery-show-modal
+                  / Gallery Item Title and Category
+                  %h5 Project Title Here
+                  %span.category Photography
+                  .gallery-modal-container
+                    .gallery-inner-container.grey
+                      .portfolio-modal
+                        %button.close-button X
+                        .image-area
+                          %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
+                          / Gallery Item Modal Window Image
+                          .portfolio-nav
+                            %button.gallery-prev &lt;
+                            %button.gallery-next &gt;
+                        .details
+                          / Gallery Item Modal Window Title
+                          %h2 Project Detail Title
+                          / Gallery Item Modal Window Content
+                          .project-info
+                            %span Photography
+                            %span.separator ::
+                            %span February 2013
+                          %p.content
+                            Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                            ipsum
+                            varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                            neque.
+                            Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                            vestibulum
+                            aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                        .collapsable-items-container
+                          / Gallery Item Modal Window Collapsable Info 1
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Client
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Client 1
+                                %li Client 2
+                                %li Client 3
+                          / Gallery Item Modal Window Collapsable Info 2
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Tasks
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Task 1
+                                %li Task 2
+                                %li Task 3
+                          / Gallery Item Modal Window Collapsable Info 3
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Skills
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Web Design &amp; Development
+                                %li HTML, CSS &amp; JavaScript
+                                %li Photoshop &amp; Illustrator
+                / Gallery Item 3
+                %li.gallery-item.all.print
+                  / Add filter name as class
+                  .image-area
+                    %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
+                    / Gallery Item Image
+                    .transparent-hover
+                    %span.plus-button
+                    / Gallery Item Description
+                    .gallery-item-description
+                      %p This text could be a brief blurb about the project and your role in creating it.
+                    %button.gallery-show-modal
+                  / Gallery Item Title and Category
+                  %h5 Project Title Here
+                  %span.category Print Design
+                  .gallery-modal-container
+                    .gallery-inner-container.grey
+                      .portfolio-modal
+                        %button.close-button X
+                        .image-area
+                          %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
+                          / Gallery Item Modal Window Image
+                          .portfolio-nav
+                            %button.gallery-prev &lt;
+                            %button.gallery-next &gt;
+                        .details
+                          / Gallery Item Modal Window Title
+                          %h2 Project Detail Title
+                          / Gallery Item Modal Window Content
+                          .project-info
+                            %span Print Design
+                            %span.separator ::
+                            %span February 2013
+                          %p.content
+                            Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                            ipsum
+                            varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                            neque.
+                            Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                            vestibulum
+                            aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                        .collapsable-items-container
+                          / Gallery Item Modal Window Collapsable Info 1
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Client
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Client 1
+                                %li Client 2
+                                %li Client 3
+                          / Gallery Item Modal Window Collapsable Info 2
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Tasks
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Task 1
+                                %li Task 2
+                                %li Task 3
+                          / Gallery Item Modal Window Collapsable Info 3
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Skills
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Web Design &amp; Development
+                                %li HTML, CSS &amp; JavaScript
+                                %li Photoshop &amp; Illustrator
+                / Gallery Item 4
+                %li.gallery-item.all.branding
+                  / Add filter name as class
+                  .image-area
+                    %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
+                    / Gallery Item Image
+                    .transparent-hover
+                    %span.plus-button
+                    / Gallery Item Description
+                    .gallery-item-description
+                      %p This text could be a brief blurb about the project and your role in creating it.
+                    %button.gallery-show-modal
+                  / Gallery Item Title and Category
+                  %h5 Project Title Here
+                  %span.category Illustration
+                  .gallery-modal-container
+                    .gallery-inner-container.grey
+                      .portfolio-modal
+                        %button.close-button X
+                        .image-area
+                          %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
+                          / Gallery Item Modal Window Image
+                          .portfolio-nav
+                            %button.gallery-prev &lt;
+                            %button.gallery-next &gt;
+                        .details
+                          / Gallery Item Modal Window Title
+                          %h2 Project Detail Title
+                          / Gallery Item Modal Window Content
+                          .project-info
+                            %span Illustration
+                            %span.separator ::
+                            %span February 2013
+                          %p.content
+                            Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                            ipsum
+                            varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                            neque.
+                            Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                            vestibulum
+                            aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                        .collapsable-items-container
+                          / Gallery Item Modal Window Collapsable Info 1
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Client
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Client 1
+                                %li Client 2
+                                %li Client 3
+                          / Gallery Item Modal Window Collapsable Info 2
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Tasks
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Task 1
+                                %li Task 2
+                                %li Task 3
+                          / Gallery Item Modal Window Collapsable Info 3
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Skills
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Web Design &amp; Development
+                                %li HTML, CSS &amp; JavaScript
+                                %li Photoshop &amp; Illustrator
+                / Gallery Item 5
+                %li.gallery-item.all.web
+                  / Add filter name as class
+                  .image-area
+                    %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
+                    / Gallery Item Image
+                    .transparent-hover
+                    %span.plus-button
+                    / Gallery Item Description
+                    .gallery-item-description
+                      %p This text could be a brief blurb about the project and your role in creating it.
+                    %button.gallery-show-modal
+                  / Gallery Item Title and Category
+                  %h5 Project Title Here
+                  %span.category Web Design
+                  .gallery-modal-container
+                    .gallery-inner-container.grey
+                      .portfolio-modal
+                        %button.close-button X
+                        .image-area
+                          %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
+                          / Gallery Item Modal Window Image
+                          .portfolio-nav
+                            %button.gallery-prev &lt;
+                            %button.gallery-next &gt;
+                        .details
+                          / Gallery Item Modal Window Title
+                          %h2 Project Detail Title
+                          / Gallery Item Modal Window Content
+                          .project-info
+                            %span Web Design
+                            %span.separator ::
+                            %span February 2013
+                          %p.content
+                            Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                            ipsum
+                            varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                            neque.
+                            Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                            vestibulum
+                            aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                        .collapsable-items-container
+                          / Gallery Item Modal Window Collapsable Info 1
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Client
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Client 1
+                                %li Client 2
+                                %li Client 3
+                          / Gallery Item Modal Window Collapsable Info 2
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Tasks
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Task 1
+                                %li Task 2
+                                %li Task 3
+                          / Gallery Item Modal Window Collapsable Info 3
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Skills
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Web Design &amp; Development
+                                %li HTML, CSS &amp; JavaScript
+                                %li Photoshop &amp; Illustrator
+                / Gallery Item 6
+                %li.gallery-item.all.print
+                  / Add filter name as class
+                  .image-area
+                    %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
+                    / Gallery Item Image
+                    .transparent-hover
+                    %span.plus-button
+                    / Gallery Item Description
+                    .gallery-item-description
+                      %p This text could be a brief blurb about the project and your role in creating it.
+                    %button.gallery-show-modal
+                  / Gallery Item Title and Category
+                  %h5 Project Title Here
+                  %span.category Print Design
+                  .gallery-modal-container
+                    .gallery-inner-container.grey
+                      .portfolio-modal
+                        %button.close-button X
+                        .image-area
+                          %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
+                          / Gallery Item Modal Window Image
+                          .portfolio-nav
+                            %button.gallery-prev &lt;
+                            %button.gallery-next &gt;
+                        .details
+                          / Gallery Item Modal Window Title
+                          %h2 Project Detail Title
+                          / Gallery Item Modal Window Content
+                          .project-info
+                            %span Print Design
+                            %span.separator ::
+                            %span February 2013
+                          %p.content
+                            Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                            ipsum
+                            varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                            neque.
+                            Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                            vestibulum
+                            aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                        .collapsable-items-container
+                          / Gallery Item Modal Window Collapsable Info 1
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Client
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Client 1
+                                %li Client 2
+                                %li Client 3
+                          / Gallery Item Modal Window Collapsable Info 2
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Tasks
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Task 1
+                                %li Task 2
+                                %li Task 3
+                          / Gallery Item Modal Window Collapsable Info 3
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Skills
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Web Design &amp; Development
+                                %li HTML, CSS &amp; JavaScript
+                                %li Photoshop &amp; Illustrator
+                / Gallery Item 7
+                %li.gallery-item.all.photography
+                  / Add filter name as class
+                  .image-area
+                    %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
+                    / Gallery Item Image
+                    .transparent-hover
+                    %span.plus-button
+                    / Gallery Item Description
+                    .gallery-item-description
+                      %p This text could be a brief blurb about the project and your role in creating it.
+                    %button.gallery-show-modal
+                  / Gallery Item Title and Category
+                  %h5 Project Title Here
+                  %span.category Photography
+                  .gallery-modal-container
+                    .gallery-inner-container.grey
+                      .portfolio-modal
+                        %button.close-button X
+                        .image-area
+                          %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
+                          / Gallery Item Modal Window Image
+                          .portfolio-nav
+                            %button.gallery-prev &lt;
+                            %button.gallery-next &gt;
+                        .details
+                          / Gallery Item Modal Window Title
+                          %h2 Project Detail Title
+                          / Gallery Item Modal Window Content
+                          .project-info
+                            %span Photography
+                            %span.separator ::
+                            %span February 2013
+                          %p.content
+                            Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                            ipsum
+                            varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                            neque.
+                            Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                            vestibulum
+                            aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                        .collapsable-items-container
+                          / Gallery Item Modal Window Collapsable Info 1
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Client
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Client 1
+                                %li Client 2
+                                %li Client 3
+                          / Gallery Item Modal Window Collapsable Info 2
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Tasks
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Task 1
+                                %li Task 2
+                                %li Task 3
+                          / Gallery Item Modal Window Collapsable Info 3
+                          .collapsable-item
+                            .clickable-area
+                              %button +
+                              / Gallery Item Modal Window Collapsable Info Label
+                              %h4 Skills
+                            .hidden-container
+                              / Gallery Item Modal Window Collapsable Info Content
+                              %ul
+                                %li Web Design &amp; Development
+                                %li HTML, CSS &amp; JavaScript
+                                %li Photoshop &amp; Illustrator
+      / Parallax 3
+      .parallax-container.parallax3
+        %img.parallax-bg{alt: "parallax-background", src: "images/parallax-placeholder-bg.png"}/
+        / Parallax 3 Background
+        / Parallax 3 Content
+        .width-container
+          %h1
+            DON’T JUST TAKE OUR
+            %br/
+            WORD FOR IT
+          %p
+            See what some of our clients have said
+            %br/
+            about working with us.
+      / Clients Row
+      #row5.row
+        .width-container
+          / Row Headings
+          .heading-container
+            .container
+              %table
+                %tr
+                  %td
+                    %h1 Clients
+            %h2 We value each and every one of our clients, and strive to keep them happy.
+            .clear
+          / Row Contents
+          .content-container
+            %h3 Praise from Our Happy Clients
+            / Testimonials
+            #testimonials
+              / Testimonial 1
+              .testimonial
+                %p
+                  Morbi interdum mollis sapien. Sed ac risus phasellus lacinia magna allam corper laoreet. Lectus
+                  arcu a pulvinar ri sus, vitae facilisis libero dolor puru sed vel lacus mauris sodales
+                  tellus.
+                .testimonial-by-container
+                  %span.testimonial-by
+                    James Doe
+                    %span ::
+                  %span.testimonial-by-company Company Name
+                .clear
+                %span
+              / Testimonial 2
+              .testimonial
+                %p
+                  Morbi interdum mollis sapien. Sed ac risus phasellus lacinia magna allam corper laoreet. Lectus
+                  arcu a pulvinar ri sus, vitae facilisis libero dolor puru sed vel lacus mauris sodales
+                  tellus.
+                .testimonial-by-container
+                  %span.testimonial-by
+                    James Doe
+                    %span ::
+                  %span.testimonial-by-company Company Name
+                .clear
+                %span
+              / Testimonial 3
+              .testimonial
+                %p
+                  Morbi interdum mollis sapien. Sed ac risus phasellus lacinia magna allam corper laoreet. Lectus
+                  arcu a pulvinar ri sus, vitae facilisis libero dolor puru sed vel lacus mauris sodales
+                  tellus.
+                .testimonial-by-container
+                  %span.testimonial-by
+                    James Doe
+                    %span ::
+                  %span.testimonial-by-company Company Name
+                .clear
+                %span
+              / Testimonial 4
+              .testimonial
+                %p
+                  Morbi interdum mollis sapien. Sed ac risus phasellus lacinia magna allam corper laoreet. Lectus
+                  arcu a pulvinar ri sus, vitae facilisis libero dolor puru sed vel lacus mauris sodales
+                  tellus.
+                .testimonial-by-container
+                  %span.testimonial-by
+                    James Doe
+                    %span ::
+                  %span.testimonial-by-company Company Name
+                .clear
+                %span
+              .clear
+            / Client Slider
+            %h3 A Few of Our Happy Clients
+            #client-slider-container
+              #client-slider
+                .client-logo
+                  %img{alt: "client-logo", src: "images/client-logo-placeholder.png"}/
+                  / Client Logo 1
+                .client-logo
+                  %img{alt: "client-logo", src: "images/client-logo-placeholder.png"}/
+                  / Client Logo 2
+                .client-logo
+                  %img{alt: "client-logo", src: "images/client-logo-placeholder.png"}/
+                  / Client Logo 3
+                .client-logo
+                  %img{alt: "client-logo", src: "images/client-logo-placeholder.png"}/
+                  / Client Logo 4
+                .client-logo
+                  %img{alt: "client-logo", src: "images/client-logo-placeholder.png"}/
+                  / Client Logo 5
+      / Contact Row
+      #row6.row.grey
+        .width-container
+          / Row Headings
+          .heading-container
+            .container
+              %table
+                %tr
+                  %td
+                    %h1 Contact
+            %h2 We are always happy to hear from you, whether you just want to say hi or get a full proposal.
+            .clear
+            #form-alert
+          / Row Contents
+          .content-container
+            .container.left
+              %p
+                Let us know how we might be able to help. Do you just need to spitball some ideas? Want a quote? Or
+                just wanted to drop a line to say hello. Whatever you need, drop us a line and we’ll get back to you
+                as soon as humanly possible.
+              / Contact Information
+              .contact-details
+                %ul
+                  %li
+                    %span.icon-home
+                    %span.contact-detail
+                      25390 Anystreet
+                      %br/
+                      / Contact Address
+                      Cityname, ST
+                    .clear
+                  %li
+                    %span.icon-mobile-phone
+                    %span.contact-detail +00 (0) 000 00 00
+                    / Contact Phone
+                    .clear
+                  %li
+                    %span.icon-envelope
+                    %span.contact-detail support@domain.com
+                    / Contact Email
+                    .clear
+            .left.last
+              / Contact Form
+              %form#contact-form
+                .input
+                  %span Name
+                  %input{name: "Name", type: "text"}/
+                .input
+                  %span Email
+                  %input{name: "Email", type: "email"}/
+                .input
+                  %span Subject
+                  %input{name: "Subject", type: "text"}/
+                .textarea
+                  %span Message
+                  %textarea{name: "Message"}
+                %span All fields required
+                %button{type: "submit"} Submit
+                .clear
+            .clear
+      .width-container
+      #overlay
+        %div
+      / Footer
+      %footer
+        #upper-footer
+          .width-container
+            .info
+              / Logo and Information
+              .logo
+                %h1
+                  MULTI
+                  %span.green FACET
+                %a{href: "#"}
+              %p
+                Multi-facet are a passionate web agency committed to delivering goal oriented web sites that deliver
+                fast results to clients. Experts in design, geniuses in user experience our aim is to develop as
+                site that make your users do more of what you want your users to do. Nothing more and nothing
+                less.
+              / Contact Information
+              .contact-details
+                %ul
+                  %li
+                    %span.icon-mobile-phone
+                    %span.contact-detail 800.555.1212
+                    / Contact Phone
+                    .clear
+                  %li
+                    %span.icon-envelope
+                    %span.contact-detail info@multifacet.com
+                    / Contact Email
+                    .clear
+            / News Section
+            .news
+              %h3 LATEST NEWS
+              %ul
+                / News 1
+                %li
+                  / News Date
+                  .date
+                    %span.day 16
+                    %span.month Jul
+                  / News Description
+                  %span Mauris non mattis libero. Curabitur pellentesque massa vitae…
+                / News 1
+                %li
+                  / News Date
+                  .date
+                    %span.day 12
+                    %span.month Jul
+                  / News Description
+                  %span Mauris non mattis libero. Curabitur pellentesque massa vitae…
+                / News 1
+                %li
+                  / News Date
+                  .date
+                    %span.day 08
+                    %span.month Jul
+                  / News Description
+                  %span Mauris non mattis libero. Curabitur pellentesque massa vitae…
+                %li.last
+            / Tweets Section
+            .tweets
+              %h3 RECENT TWEETS
+              .tweet-container
+                %span.icon-twitter
+                #tweet-inner-container
+                #more-button-container
+                  %a.more-tweets{href: "#", target: "_blank"}
+                    %span more tweets
+                    %span.icon-caret-right
+                  .clear
+              %a#top-button{href: "#main-slider-container"}
+            .clear
+        / Bottom of Footer
+        #bottom-footer
+          .width-container
+            / Copyright info
+            %span ©2013 Multifacet. All rights reserved
+            / Social Media Links
+            .social-links
+              %ul
+                %li
+                  %a.icon-twitter{href: "#"}
+                  / Twitter Link
+                %li
+                  %a.icon-linkedin{href: "#"}
+                  / Linkedin Link
+                %li
+                  %a.icon-pinterest{href: "#"}
+                  / Pinterest Link
+                %li
+                  %a.icon-dribbble{href: "#"}
+                  / Dribble Link
+                %li
+                  %a.icon-rss{href: "#"}
+                  / RSS Link
+                %li
+                  %a.icon-facebook{href: "#"}
+                  / Facebook Link
+            / Footer Navigation links
+            %ul.nav
+              %li
+                %a{href: "#main-slider-container"} Home
+              %li
+                %a{href: "#row1"} Services
+              %li
+                %a{href: "#row2"} About
+              %li
+                %a{href: "#row3"} Team
+              %li
+                %a{href: "#row4"} Portfolio
+              %li
+                %a{href: "#row5"} Clients
+              %li
+                %a{href: "#row6"} Contact
+            .clear
+    / Flex Slider
+    %script{src: "javascripts/jquery.flexslider-min.js", type: "text/javascript"}
+    / MixItUp
+    %script{src: "javascripts/jquery.mixitup.min.js", type: "text/javascript"}
+    / BX Slider
+    %script{src: "javascripts/jquery.bxslider.min.js", type: "text/javascript"}
+    / Animation Pause Plugin
+    %script{src: "javascripts/jquery.pause.min.js", type: "text/javascript"}
+    / BGPOS
+    %script{src: "javascripts/jquery.bgpos.js", type: "text/javascript"}
+    / TinyNav
+    %script{src: "javascripts/tinynav.js", type: "text/javascript"}
+    / Tweeter module
+    %script{src: "javascripts/jquery.tweet.js", type: "text/javascript"}
+    / Main JS file
+    %script{src: "javascripts/main.js", type: "text/javascript"}
