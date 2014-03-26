@@ -25,19 +25,19 @@ ul.bulletList li:before {
 /* You can set skill bar widths here */
 
 #skills-container .skill#skill1.full .bar {
-    width: 90%;
+    width: 95%;
 }
 
 #skills-container .skill#skill2.full .bar {
-    width: 80%;
+    width: 65%;
 }
 
 #skills-container .skill#skill3.full .bar {
-    width: 60%;
+    width: 85%;
 }
 
 #skills-container .skill#skill4.full .bar {
-    width: 85%;
+    width: 55%;
 }
 
 #skills-container .skill#skill5.full .bar {
@@ -1076,7 +1076,7 @@ header.iconic #main-nav a i {
 /* Skills Area*/
 
 #skills-container {
-    margin: 0px 0px 20% 0px;
+    margin: 40px 0px 20% 0px;
 }
 
 #skills-container .skill {
@@ -1108,6 +1108,11 @@ header.iconic #main-nav a i {
     position: absolute;
     top: 0px;
     left: 20px;
+}
+
+#skills-container .skill .skill-name span {
+    color: #4E2424; 
+    padding-left: 6px;
 }
 
 /* Collapsable Items */
@@ -2220,43 +2225,16 @@ footer #top-button {
     display: none;
 }
 
-/* Catact Soc Net Disks */
+/* Contact Soc Net Disks */
+p.soc-contact {
+    margin-top: 0 !important;
+}
+p.soc-contact img  {
+    position: relative;
+    top: 25px;
+}
 
-.social-disc {
-    list-style-type: none;
-    margin-top: 2em;
-}
-.social-disc li {
-    height: 50px;
-    margin-bottom: 1em;
-}
-.social-disc li a {
-    background: url("../images/sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    padding-left: 60px;
-    text-decoration: none;
-}
-.social-disc li a.facebook {
-    background-position: 0 -547px;
-    color: #43609C;
-}
-.social-disc li a.twitter {
-    background-position: 0 -598px;
-    color: #5FC5EC;
-}
-.social-disc li a.dribbble {
-    background-position: 0 -649px;
-    color: #EB528D;
-}
-.social-disc li a.linkedin {
-    background-position: 0 -700px;
-    color: #0982C0;
-}
-.social-disc li a:hover {
-    opacity: 0.7;
-}
+
 
 
 
