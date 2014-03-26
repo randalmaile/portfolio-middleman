@@ -74,15 +74,17 @@
                 %h2
                   %span
                     %i.icon-chevron-right
-                  Skills
+                  %a{:href => "#row1"} Skills
                 %h2
                   %span
                     %i.icon-chevron-right
-                  Portfolio
+                  %a{:href => "#row2"} Portfolio
                 %h2
                   %span
                     %i.icon-chevron-right
-                  Or contact me for employment, a cool app idea or contributions to open-source projects
+                  Or 
+                  %a{:href => "#row6"} contact me 
+                  for employment, a cool app idea or contributions to open-source projects
             / %img#slide2-element.slide-element{alt: "slide-element", src: "images/slide2-placeholder-element.png"}/
             / Floating element
     .progress-bar
@@ -110,23 +112,33 @@
             / Skill 1
             #skill1.skill.empty
               .bar
-              %h4.skill-name Front-end :: 90%
+              %h4.skill-name.exp 
+                Front-end  :: 
+                %span Expert
             / Skill 2
             #skill2.skill.empty
               .bar
-              %h4.skill-name Ruby on Rails :: 70%
+              %h4.skill-name.int
+                ASP.NET / C#  :: 
+                %span Intermed
             / Skill 3
             #skill3.skill.empty
               .bar
-              %h4.skill-name CMS :: 70%
+              %h4.skill-name.adv 
+                CMS  :: 
+                %span Adv
             / Skill 4
             #skill4.skill.empty
               .bar
-              %h4.skill-name ASP.NET :: 65%
+              %h4.skill-name.intro 
+                Ruby on Rails  :: 
+                %span Intro
             / Skill 5
             #skill5.skill.empty
               .bar
-              %h4.skill-name UX / Visual Design:: 50%
+              %h4.skill-name.adv 
+                UX / Visual Design  :: 
+                %span Adv
         .left.last
           / Rotating Buttons Area
           .button-container
@@ -246,740 +258,580 @@
         / Testimonial By
         .testimonial-by-container
           %div
-            %span.testimonial-by{style: "color: #006E00; font-weight: bold;"} Hans Hofmann -
+            %span.testimonial-by{style: "color: #2E0055; font-weight: bold;"} Hans Hofmann -
             %br/
             %span.testimonial-by-location{style: "position: relative; top: 14px;"}
               Abstract expressionist
             .clear
         .clear
   / Portfolio
-  / <div class='row' id='row4'>
   #row2.row
     .width-container
-      / Row Headings
-      .heading-container
-        .container
-          %table
-            %tr
-              %td
-                %h1 Portfolio
-        %h2 I enjoy challenge of solving complex problems and creating great user experiences. Writing elegant and efficient code whether its Ruby/Rails or C#/ASP.NET in conjunction with HTML, CSS or jQuery is what makes me tick.
+    / Row Headings
+    .heading-container
+      .container
+        %table
+          %tr
+            %td
+              %h1 Portfolio
+      %h2 I enjoy the challenge of solving complex problems and creating great user experiences. Writing elegant and efficient code whether its Ruby/Rails or C#/ASP.NET in conjunction with HTML, CSS or jQuery is what makes me tick.
+      .clear
+    / Row Contents
+    .content-container
+      #gallery-container
+        / Gallery Filters
+        .gallery-options
+          %button.button1.active.filter{"data-filter" => "all"} ALL
+          / Gallery Filter (Only the text "ALL" inside the button can be changed)
+          %button.button2.filter{"data-filter" => "apps"} Applications
+          / Gallery Filter
+          %button.button3.filter{"data-filter" => "responsive"} Responsive/Mobile
+          / Gallery Filter
+          %button.button4.filter{"data-filter" => "web"} Websites
+          / Gallery Filter
+        .gallery-options.column-selector
+          %button.button2 2-COLUMNS
+          %button.button3 3-COLUMNS
+          %button.button4.active 4-COLUMNS
         .clear
-      / Row Contents
-      .content-container
-        #gallery-container
-          / Gallery Filters
-          .gallery-options
-            %button.button1.active.filter{"data-filter" => "all"} ALL
-            / Gallery Filter (Only the text "ALL" inside the button can be changed)
-            %button.button2.filter{"data-filter" => "apps"} Applications
-            / Gallery Filter
-            %button.button3.filter{"data-filter" => "responsive"} Responsive/Mobile
-            / Gallery Filter
-            %button.button4.filter{"data-filter" => "web"} Websites
-            / Gallery Filter
-          .gallery-options.column-selector
-            %button.button2 2-COLUMNS
-            %button.button3 3-COLUMNS
-            %button.button4.active 4-COLUMNS
-          .clear
-          / Gallery Area
-          %ul#gallery.four-cols
-            / Change this ul's class name to "two-cols", "three-cols" or "four-cols"
-            / Gallery Item 1
-            %li.gallery-item.all.apps
-              / Add filter name as class
-              .image-area
-                %img{alt: "portfolio-thumb", src: "images/proj-admissions-400px.png"}/
-                / Gallery Item Image
-                .transparent-hover
-                %span.plus-button
-                / Gallery Item Description
-                .gallery-item-description
-                  %p Front-end development + APS.NET MVC3 application development.
-                %button.gallery-show-modal
-              / Gallery Item Title and Category
-              %h5 UCR Admissions
-              %span.category ASP.NET Application Development
-              .gallery-modal-container
-                .gallery-inner-container.grey
-                  .portfolio-modal
-                    %button.close-button X
-                    .image-area
-                      %img{alt: "portfolio-large-image", src: "images/proj-admissions-595px.png"}/
-                      / Gallery Item Modal Window Image
-                      .portfolio-nav
-                        %button.gallery-prev &lt;
-                        %button.gallery-next &gt;
-                    .details
-                      / Gallery Item Modal Window Title
-                      %h2 UCR Admissions / International Admissions Suite
-                      / Gallery Item Modal Window Content
-                      .project-info
-                        %span ASP.NET Application Development
-                        %span.separator ::
-                        %span 2013-2014 ongoing
-                      %p.content
-                        Our admissions websites serve a large number of students needs, including application requirements, admissions procedures, deadline and student notification management, social networking integration and custom forms.
-                    .collapsable-items-container
-                      / Gallery Item Modal Window Collapsable Info 1
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Partners
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Student Affairs Communications
-                            %li Enrollment Management
-                            %li Vice Chancellor - Student Affairs
-                      / Gallery Item Modal Window Collapsable Info 2
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Tasks
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li UX/UI Design
-                            %li Front-end coding
-                            %li Dynamic Date / API Integration
-                      / Gallery Item Modal Window Collapsable Info 3
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Skills
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li HTML5, CSS3, jQuery, AJAX, custom plugin development
-                            %li ASP.NET MVC3, domain modeling, form processing, data validation
-                            %li Mercurial Source Control, Project Management
-            / Gallery Item 2
-            %li.gallery-item.all.responsive
-              / Add filter name as class
-              .image-area
-                %img{alt: "portfolio-thumb", src: "images/proj-culinary-400px.png"}/
-                / Gallery Item Image
-                .transparent-hover
-                %span.plus-button
-                / Gallery Item Description
-                .gallery-item-description
-                  %p Mobile / Responsive Web Design + APS.NET MVC3 application development.
-                %button.gallery-show-modal
-              / Gallery Item Title and Category
-              %h5 Culinary Chameleon
-              %span.category Responsive Website
-              .gallery-modal-container
-                .gallery-inner-container.grey
-                  .portfolio-modal
-                    %button.close-button X
-                    .image-area
-                      %img{alt: "portfolio-large-image", src: "images/proj-culinary-595px.png"}/
-                      / Gallery Item Modal Window Image
-                      .portfolio-nav
-                        %button.gallery-prev &lt;
-                        %button.gallery-next &gt;
-                    .details
-                      / Gallery Item Modal Window Title
-                      %h2 Culinary Chameleon / UCR Food Trucks
-                      / Gallery Item Modal Window Content
-                      .project-info
-                        %span Responsive Website
-                        %span.separator ::
-                        %span July 2013
-                      %p.content
-                        Implemented the Culinary Chameleon mobile/responsive website to showcase menu, location, hours, polls, twitter feeds and reservation requests forms for our campus food trucks.
-                    .collapsable-items-container
-                      / Gallery Item Modal Window Collapsable Info 1
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Client
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Student Affairs Communications
-                            %li Housing, Dining and Residential Services
-                      / Gallery Item Modal Window Collapsable Info 2
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Tasks
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Front-end coding
-                            %li Responsive web design
-                            %li Dynamic Date / API Integration
-                      / Gallery Item Modal Window Collapsable Info 3
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Skills
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li HTML5, CSS3, jQuery
-                            %li Zurb Foundation based responsive coding
-                            %li ASP.NET MVC3, domain modeling, form processing, data validation
-                            %li Mercurial Source Control, Project Management
-            / Gallery Item 3
-            %li.gallery-item.all.web
-              / Add filter name as class
-              .image-area
-                %img{alt: "portfolio-thumb", src: "images/proj-housing-400px.png"}/
-                / Gallery Item Image
-                .transparent-hover
-                %span.plus-button
-                / Gallery Item Description
-                .gallery-item-description
-                  %p Front-end development + APS.NET Web Forms application development
-                %button.gallery-show-modal
-              / Gallery Item Title and Category
-              %h5 UCR Housing
-              %span.category Website
-              .gallery-modal-container
-                .gallery-inner-container.grey
-                  .portfolio-modal
-                    %button.close-button X
-                    .image-area
-                      %img{alt: "portfolio-large-image", src: "images/proj-housing-595px.png"}/
-                      / Gallery Item Modal Window Image
-                      .portfolio-nav
-                        %button.gallery-prev &lt;
-                        %button.gallery-next &gt;
-                    .details
-                      / Gallery Item Modal Window Title
-                      %h2 Project Detail Title
-                      / Gallery Item Modal Window Content
-                      .project-info
-                        %span Website
-                        %span.separator ::
-                        %span February 2013
-                      %p.content
-                        Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                        ipsum
-                        varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                        neque.
-                        Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                        vestibulum
-                        aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
-                    .collapsable-items-container
-                      / Gallery Item Modal Window Collapsable Info 1
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Client
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Client 1
-                            %li Client 2
-                            %li Client 3
-                      / Gallery Item Modal Window Collapsable Info 2
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Tasks
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Task 1
-                            %li Task 2
-                            %li Task 3
-                      / Gallery Item Modal Window Collapsable Info 3
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Skills
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Web Design &amp; Development
-                            %li HTML, CSS &amp; JavaScript
-                            %li Photoshop &amp; Illustrator
-            / Gallery Item 4
-            %li.gallery-item.all.apps
-              / Add filter name as class
-              .image-area
-                %img{alt: "portfolio-thumb", src: "images/proj-visit-400px.png"}/
-                / Gallery Item Image
-                .transparent-hover
-                %span.plus-button
-                / Gallery Item Description
-                .gallery-item-description
-                  %p Put in a full description here
-                %button.gallery-show-modal
-              / Gallery Item Title and Category
-              %h5 Visit UCR Tours
-              %span.category ASP.NET Application Development
-              .gallery-modal-container
-                .gallery-inner-container.grey
+        / Gallery Area
+        %ul#gallery.four-cols
+          / Change this ul's class name to "two-cols", "three-cols" or "four-cols"
+          / UCR Admissions
+          %li.gallery-item.all.apps
+            / Add filter name as class
+            .image-area
+              %img{alt: "portfolio-thumb", src: "images/proj-admissions-400px.png"}/
+              / Gallery Item Image
+              .transparent-hover
+              %span.plus-button
+              / Gallery Item Description
+              .gallery-item-description
+                %p Front-end development + APS.NET MVC3 application development.
+              %button.gallery-show-modal
+            / Gallery Item Title and Category
+            %h5 UCR Admissions
+            %span.category ASP.NET Application Development
+            .gallery-modal-container
+              .gallery-inner-container.grey
+                .portfolio-modal
                   %button.close-button X
-                  .portfolio-modal
-                    .image-area
-                      %img{alt: "portfolio-large-image", src: "images/proj-visit-595px.png"}/
-                      / Gallery Item Modal Window Image
-                      .portfolio-nav
-                        %button.gallery-prev &lt;
-                        %button.gallery-next &gt;
-                    .details
-                      / Gallery Item Modal Window Title
-                      %h2 Project Detail Title
-                      / Gallery Item Modal Window Content
-                      .project-info
-                        %span Application Development
-                        %span.separator ::
-                        %span February 2013
-                      %p.content
-                        Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                        ipsum
-                        varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                        neque.
-                        Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                        vestibulum
-                        aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
-                    .collapsable-items-container
-                      / Gallery Item Modal Window Collapsable Info 1
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Client
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Client 1
-                            %li Client 2
-                            %li Client 3
-                      / Gallery Item Modal Window Collapsable Info 2
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Tasks
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Task 1
-                            %li Task 2
-                            %li Task 3
-                      / Gallery Item Modal Window Collapsable Info 3
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Skills
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Web Design &amp; Development
-                            %li HTML, CSS &amp; JavaScript
-                            %li Photoshop &amp; Illustrator
-            / Gallery Item 5
-            %li.gallery-item.all.responsive
-              / Add filter name as class
-              .image-area
-                %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
-                / Gallery Item Image
-                .transparent-hover
-                %span.plus-button
-                / Gallery Item Description
-                .gallery-item-description
-                  %p A full-bodied Reddit clone - social networking news service where members submit posts or direct links with voting and favoriting functionality.
-                %button.gallery-show-modal
-              / Gallery Item Title and Category
-              %h5 Bloccit
-              %span.category Responsive Rails Application
-              .gallery-modal-container
-                .gallery-inner-container.grey
-                  .portfolio-modal
-                    %button.close-button X
-                    .image-area
-                      %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
-                      / Gallery Item Modal Window Image
-                      .portfolio-nav
-                        %button.gallery-prev &lt;
-                        %button.gallery-next &gt;
-                    .details
-                      / Gallery Item Modal Window Title
-                      %h2 Bloccit social networking news service
-                      / Gallery Item Modal Window Content
-                      .project-info
-                        %span Responsive Rails Application Development
-                        %span.separator ::
-                        %span December 2013
-                      %p.content
-                        Bloccit is an entertainment, social networking service and news website where registered community members can submit content, such as text posts or direct links. Only registered users can then vote submissions "up" or "down" to organize the posts and determine their position on the site's pages. Content entries are categoriezed by topic and managed by administrators
-                    .collapsable-items-container
-                      / Gallery Item Modal Window Collapsable Info 1
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Client
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Client 1
-                            %li Client 2
-                            %li Client 3
-                      / Gallery Item Modal Window Collapsable Info 2
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Tasks
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Task 1
-                            %li Task 2
-                            %li Task 3
-                      / Gallery Item Modal Window Collapsable Info 3
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Skills
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Web Design &amp; Development
-                            %li HTML, CSS &amp; JavaScript
-                            %li Photoshop &amp; Illustrator
-            / Gallery Item 6
-            %li.gallery-item.all.web
-              / Add filter name as class
-              .image-area
-                %img{alt: "portfolio-thumb", src: "images/proj-leroch-400px.png"}/
-                / Gallery Item Image
-                .transparent-hover
-                %span.plus-button
-                / Gallery Item Description
-                .gallery-item-description
-                  %p This text could be a brief blurb about the project and your role in creating it.
-                %button.gallery-show-modal
-              / Gallery Item Title and Category
-              %h5 LeRoch Lab
-              %span.category Website
-              .gallery-modal-container
-                .gallery-inner-container.grey
-                  .portfolio-modal
-                    %button.close-button X
-                    .image-area
-                      %img{alt: "portfolio-large-image", src: "images/proj-leroch-595px.png"}/
-                      / Gallery Item Modal Window Image
-                      .portfolio-nav
-                        %button.gallery-prev &lt;
-                        %button.gallery-next &gt;
-                    .details
-                      / Gallery Item Modal Window Title
-                      %h2 LeRoch Lab
-                      / Gallery Item Modal Window Content
-                      .project-info
-                        %span Website
-                        %span.separator ::
-                        %span April 2010 - ongoing
-                      %p.content
-                        Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                        ipsum
-                        varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                        neque.
-                        Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                        vestibulum
-                        aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
-                    .collapsable-items-container
-                      / Gallery Item Modal Window Collapsable Info 1
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Client
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Client 1
-                            %li Client 2
-                            %li Client 3
-                      / Gallery Item Modal Window Collapsable Info 2
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Tasks
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Task 1
-                            %li Task 2
-                            %li Task 3
-                      / Gallery Item Modal Window Collapsable Info 3
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Skills
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Web Design &amp; Development
-                            %li HTML, CSS &amp; JavaScript
-                            %li Photoshop &amp; Illustrator
-            / Gallery Item 7
-            %li.gallery-item.all.apps
-              / Add filter name as class
-              .image-area
-                %img{alt: "portfolio-thumb", src: "images/gallery-thumbnail-placeholder.png"}/
-                / Gallery Item Image
-                .transparent-hover
-                %span.plus-button
-                / Gallery Item Description
-                .gallery-item-description
-                  %p This text could be a brief blurb about the project and your role in creating it.
-                %button.gallery-show-modal
-              / Gallery Item Title and Category
-              %h5 Blocmarks
-              %span.category Responsive Rails Application
-              .gallery-modal-container
-                .gallery-inner-container.grey
-                  .portfolio-modal
-                    %button.close-button X
-                    .image-area
-                      %img{alt: "portfolio-large-image", src: "images/gallery-large-image-placeholder.png"}/
-                      / Gallery Item Modal Window Image
-                      .portfolio-nav
-                        %button.gallery-prev &lt;
-                        %button.gallery-next &gt;
-                    .details
-                      / Gallery Item Modal Window Title
-                      %h2 Blocmarks
-                      / Gallery Item Modal Window Content
-                      .project-info
-                        %span Responsive Rails Application
-                        %span.separator ::
-                        %span February 2013
-                      %p.content
-                        Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                        ipsum
-                        varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                        neque.
-                        Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                        vestibulum
-                        aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
-                    .collapsable-items-container
-                      / Gallery Item Modal Window Collapsable Info 1
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Client
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Client 1
-                            %li Client 2
-                            %li Client 3
-                      / Gallery Item Modal Window Collapsable Info 2
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Tasks
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Task 1
-                            %li Task 2
-                            %li Task 3
-                      / Gallery Item Modal Window Collapsable Info 3
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Skills
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Web Design &amp; Development
-                            %li HTML, CSS &amp; JavaScript
-                            %li Photoshop &amp; Illustrator
-                            / Gallery Item 6
-            %li.gallery-item.all.web
-              / Add filter name as class
-              .image-area
-                %img{alt: "portfolio-thumb", src: "images/proj-international-400px.png"}/
-                / Gallery Item Image
-                .transparent-hover
-                %span.plus-button
-                / Gallery Item Description
-                .gallery-item-description
-                  %p This text could be a brief blurb about the project and your role in creating it.
-                %button.gallery-show-modal
-              / Gallery Item Title and Category
-              %h5 International Admissions
-              %span.category Website
-              .gallery-modal-container
-                .gallery-inner-container.grey
-                  .portfolio-modal
-                    %button.close-button X
-                    .image-area
-                      %img{alt: "portfolio-large-image", src: "images/proj-international-595px.png"}/
-                      / Gallery Item Modal Window Image
-                      .portfolio-nav
-                        %button.gallery-prev &lt;
-                        %button.gallery-next &gt;
-                    .details
-                      / Gallery Item Modal Window Title
-                      %h2 UCR International Admissions
-                      / Gallery Item Modal Window Content
-                      .project-info
-                        %span Website
-                        %span.separator ::
-                        %span April 2010 - ongoing
-                      %p.content
-                        Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                        ipsum
-                        varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                        neque.
-                        Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                        vestibulum
-                        aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
-                    .collapsable-items-container
-                      / Gallery Item Modal Window Collapsable Info 1
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Client
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Client 1
-                            %li Client 2
-                            %li Client 3
-                      / Gallery Item Modal Window Collapsable Info 2
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Tasks
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Task 1
-                            %li Task 2
-                            %li Task 3
-                      / Gallery Item Modal Window Collapsable Info 3
-                      .collapsable-item
-                        .clickable-area
-                          %button +
-                          / Gallery Item Modal Window Collapsable Info Label
-                          %h4 Skills
-                        .hidden-container
-                          / Gallery Item Modal Window Collapsable Info Content
-                          %ul
-                            %li Web Design &amp; Development
-                            %li HTML, CSS &amp; JavaScript
-                            %li Photoshop &amp; Illustrator
-  / Feedback Row
-  #row3.row
-    .width-container
-      / Row Headings
-      .heading-container
-        .container
-          %table
-            %tr
-              %td
-                %h1 Feedback
-        %h2 I've been very lucky to work with some amazing individuals, many of whom acted as mentors - all helped drive challenging projects to completion.
-        .clear
-      / Row Contents
-      .content-container
-        / Testimonials
-        #testimonials
-          / Testimonial 1
-          .testimonial
-            %p
-              Morbi interdum mollis sapien. Sed ac risus phasellus lacinia magna allam corper laoreet. Lectus
-              arcu a pulvinar ri sus, vitae facilisis libero dolor puru sed vel lacus mauris sodales
-              tellus.
-            .testimonial-by-container
-              %span.testimonial-by
-                Sean Dillingham
-                %span ::
-              %span.testimonial-by-company Manager, UX Design & Development at KPCC
-            .clear
-            %span
-          / Testimonial 2
-          .testimonial
-            %p
-              Morbi interdum mollis sapien. Sed ac risus phasellus lacinia magna allam corper laoreet. Lectus
-              arcu a pulvinar ri sus, vitae facilisis libero dolor puru sed vel lacus mauris sodales
-              tellus.
-            .testimonial-by-container
-              %span.testimonial-by
-                Michał Kwiatkowski 
-                %span ::
-              %span.testimonial-by-company Freelance Programmer at Trivas / Bloc Mentor
-            .clear
-            %span
-          / Testimonial 3
-          .testimonial
-            %p
-              Morbi interdum mollis sapien. Sed ac risus phasellus lacinia magna allam corper laoreet. Lectus
-              arcu a pulvinar ri sus, vitae facilisis libero dolor puru sed vel lacus mauris sodales
-              tellus.
-            .testimonial-by-container
-              %span.testimonial-by
-                Sheila Gibbs
-                %span ::
-              %span.testimonial-by-company IT Service Lead at Cisco Systems
-            .clear
-            %span
-          / Testimonial 4
-          .testimonial
-            %p
-              Morbi interdum mollis sapien. Sed ac risus phasellus lacinia magna allam corper laoreet. Lectus
-              arcu a pulvinar ri sus, vitae facilisis libero dolor puru sed vel lacus mauris sodales
-              tellus.
-            .testimonial-by-container
-              %span.testimonial-by
-                Patricia Daly
-                %span ::
-              %span.testimonial-by-company Director - UC Riverside Student Affairs Communications
-            .clear
-            %span
-          .clear
-  / About Me Row
-  #row4.row
-    .width-container
-      / Row Headings
-      .heading-container
-        .container
-          %table
-            %tbody
-              %tr
-                %td
-                  %h1 About Me
-        %h2
-          Front-end guru with solid application development skills
-        .clear
-      .content-container
-        / Row Contents
-        .clear
+                  .image-area
+                    %img{alt: "portfolio-large-image", src: "images/proj-admissions-595px.png"}/
+                    / Gallery Item Modal Window Image
+                    .portfolio-nav
+                      %button.gallery-prev &lt;
+                      %button.gallery-next &gt;
+                  .details
+                    / Gallery Item Modal Window Title
+                    %h2 UCR Admissions / International Admissions Suite
+                    / Gallery Item Modal Window Content
+                    .project-info
+                      %span ASP.NET Application Development
+                      %span.separator ::
+                      %span 2013-2014 ongoing
+                    %p.content
+                      Our admissions websites serve a large number of students needs, including application requirements, admissions procedures, deadline and student notification management, social networking integration and custom forms.
+                  .collapsable-items-container
+                    / Gallery Item Modal Window Collapsable Info 1
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Partners
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Student Affairs Communications
+                          %li Enrollment Management
+                          %li Vice Chancellor - Student Affairs
+                    / Gallery Item Modal Window Collapsable Info 2
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Tasks
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li UX/UI Design
+                          %li Front-end coding
+                          %li Dynamic Date / API Integration
+                    / Gallery Item Modal Window Collapsable Info 3
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Skills
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li HTML5, CSS3, jQuery, AJAX, custom plugin development
+                          %li ASP.NET MVC3, domain modeling, form processing, data validation
+                          %li Mercurial Source Control, Project Management
+          / Culinary Chameleon
+          %li.gallery-item.all.responsive
+            / Add filter name as class
+            .image-area
+              %img{alt: "portfolio-thumb", src: "images/proj-culinary-400px.png"}/
+              / Gallery Item Image
+              .transparent-hover
+              %span.plus-button
+              / Gallery Item Description
+              .gallery-item-description
+                %p Mobile / Responsive Web Design + APS.NET MVC3 application development.
+              %button.gallery-show-modal
+            / Gallery Item Title and Category
+            %h5 Culinary Chameleon
+            %span.category Responsive Website
+            .gallery-modal-container
+              .gallery-inner-container.grey
+                .portfolio-modal
+                  %button.close-button X
+                  .image-area
+                    %img{alt: "portfolio-large-image", src: "images/proj-culinary-595px.png"}/
+                    / Gallery Item Modal Window Image
+                    .portfolio-nav
+                      %button.gallery-prev &lt;
+                      %button.gallery-next &gt;
+                  .details
+                    / Gallery Item Modal Window Title
+                    %h2 Culinary Chameleon / UCR Food Trucks
+                    / Gallery Item Modal Window Content
+                    .project-info
+                      %span Responsive Website
+                      %span.separator ::
+                      %span July 2013
+                    %p.content
+                      Implemented the Culinary Chameleon mobile/responsive website to showcase menu, location, hours, polls, twitter feeds and reservation requests forms for our campus food trucks.
+                  .collapsable-items-container
+                    / Gallery Item Modal Window Collapsable Info 1
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Client
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Student Affairs Communications
+                          %li Housing, Dining and Residential Services
+                    / Gallery Item Modal Window Collapsable Info 2
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Tasks
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Front-end coding
+                          %li Responsive web design
+                          %li Dynamic Date / API Integration
+                    / Gallery Item Modal Window Collapsable Info 3
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Skills
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li HTML5, CSS3, jQuery
+                          %li Zurb Foundation based responsive coding
+                          %li ASP.NET MVC3, domain modeling, form processing, data validation
+                          %li Mercurial Source Control, Project Management
+          / UCR Housing
+          %li.gallery-item.all.web
+            / Add filter name as class
+            .image-area
+              %img{alt: "portfolio-thumb", src: "images/proj-housing-400px.png"}/
+              / Gallery Item Image
+              .transparent-hover
+              %span.plus-button
+              / Gallery Item Description
+              .gallery-item-description
+                %p Front-end development + APS.NET Web Forms application development
+              %button.gallery-show-modal
+            / Gallery Item Title and Category
+            %h5 UCR Housing
+            %span.category Website
+            .gallery-modal-container
+              .gallery-inner-container.grey
+                .portfolio-modal
+                  %button.close-button X
+                  .image-area
+                    %img{alt: "portfolio-large-image", src: "images/proj-housing-595px.png"}/
+                    / Gallery Item Modal Window Image
+                    .portfolio-nav
+                      %button.gallery-prev &lt;
+                      %button.gallery-next &gt;
+                  .details
+                    / Gallery Item Modal Window Title
+                    %h2 Project Detail Title
+                    / Gallery Item Modal Window Content
+                    .project-info
+                      %span Website
+                      %span.separator ::
+                      %span February 2013
+                    %p.content
+                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                      ipsum
+                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                      neque.
+                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                      vestibulum
+                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                  .collapsable-items-container
+                    / Gallery Item Modal Window Collapsable Info 1
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Client
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Client 1
+                          %li Client 2
+                          %li Client 3
+                    / Gallery Item Modal Window Collapsable Info 2
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Tasks
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Task 1
+                          %li Task 2
+                          %li Task 3
+                    / Gallery Item Modal Window Collapsable Info 3
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Skills
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Web Design &amp; Development
+                          %li HTML, CSS &amp; JavaScript
+                          %li Photoshop &amp; Illustrator
+          / Visit UCR
+          %li.gallery-item.all.apps
+            / Add filter name as class
+            .image-area
+              %img{alt: "portfolio-thumb", src: "images/proj-visit-400px.png"}/
+              / Gallery Item Image
+              .transparent-hover
+              %span.plus-button
+              / Gallery Item Description
+              .gallery-item-description
+                %p Put in a full description here
+              %button.gallery-show-modal
+            / Gallery Item Title and Category
+            %h5 Visit UCR Tours
+            %span.category ASP.NET Application Development
+            .gallery-modal-container
+              .gallery-inner-container.grey
+                %button.close-button X
+                .portfolio-modal
+                  .image-area
+                    %img{alt: "portfolio-large-image", src: "images/proj-visit-595px.png"}/
+                    / Gallery Item Modal Window Image
+                    .portfolio-nav
+                      %button.gallery-prev &lt;
+                      %button.gallery-next &gt;
+                  .details
+                    / Gallery Item Modal Window Title
+                    %h2 Project Detail Title
+                    / Gallery Item Modal Window Content
+                    .project-info
+                      %span Application Development
+                      %span.separator ::
+                      %span February 2013
+                    %p.content
+                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                      ipsum
+                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                      neque.
+                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                      vestibulum
+                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                  .collapsable-items-container
+                    / Gallery Item Modal Window Collapsable Info 1
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Client
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Client 1
+                          %li Client 2
+                          %li Client 3
+                    / Gallery Item Modal Window Collapsable Info 2
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Tasks
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Task 1
+                          %li Task 2
+                          %li Task 3
+                    / Gallery Item Modal Window Collapsable Info 3
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Skills
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Web Design &amp; Development
+                          %li HTML, CSS &amp; JavaScript
+                          %li Photoshop &amp; Illustrator            
+          / International Admissions               
+          %li.gallery-item.all.web
+            / Add filter name as class
+            .image-area
+              %img{alt: "portfolio-thumb", src: "images/proj-international-400px.png"}/
+              / Gallery Item Image
+              .transparent-hover
+              %span.plus-button
+              / Gallery Item Description
+              .gallery-item-description
+                %p This text could be a brief blurb about the project and your role in creating it.
+              %button.gallery-show-modal
+            / Gallery Item Title and Category
+            %h5 International Admissions
+            %span.category Website
+            .gallery-modal-container
+              .gallery-inner-container.grey
+                .portfolio-modal
+                  %button.close-button X
+                  .image-area
+                    %img{alt: "portfolio-large-image", src: "images/proj-international-595px.png"}/
+                    / Gallery Item Modal Window Image
+                    .portfolio-nav
+                      %button.gallery-prev &lt;
+                      %button.gallery-next &gt;
+                  .details
+                    / Gallery Item Modal Window Title
+                    %h2 UCR International Admissions
+                    / Gallery Item Modal Window Content
+                    .project-info
+                      %span Website
+                      %span.separator ::
+                      %span April 2010 - ongoing
+                    %p.content
+                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                      ipsum
+                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                      neque.
+                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                      vestibulum
+                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                  .collapsable-items-container
+                    / Gallery Item Modal Window Collapsable Info 1
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Client
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Client 1
+                          %li Client 2
+                          %li Client 3
+                    / Gallery Item Modal Window Collapsable Info 2
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Tasks
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Task 1
+                          %li Task 2
+                          %li Task 3
+                    / Gallery Item Modal Window Collapsable Info 3
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Skills
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Web Design &amp; Development
+                          %li HTML, CSS &amp; JavaScript
+                          %li Photoshop &amp; Illustrator
+          / Registrar
+          %li.gallery-item.all.apps
+            / Add filter name as class
+            .image-area
+              %img{alt: "portfolio-thumb", src: "images/proj-registrar-400px.png"}/
+              / Gallery Item Image
+              .transparent-hover
+              %span.plus-button
+              / Gallery Item Description
+              .gallery-item-description
+                %p This text could be a brief blurb about the project and your role in creating it.
+              %button.gallery-show-modal
+            / Gallery Item Title and Category
+            %h5 Registrar
+            %span.category ASP.NET Application Development
+            .gallery-modal-container
+              .gallery-inner-container.grey
+                .portfolio-modal
+                  %button.close-button X
+                  .image-area
+                    %img{alt: "portfolio-large-image", src: "images/proj-registrar-595px.png"}/
+                    / Gallery Item Modal Window Image
+                    .portfolio-nav
+                      %button.gallery-prev &lt;
+                      %button.gallery-next &gt;
+                  .details
+                    / Gallery Item Modal Window Title
+                    %h2 Registrar's Dynamic Website
+                    / Gallery Item Modal Window Content
+                    .project-info
+                      %span ASP.NET Application Development
+                      %span.separator ::
+                      %span July 2013
+                    %p.content
+                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                      ipsum
+                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                      neque.
+                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                      vestibulum
+                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                  .collapsable-items-container
+                    / Gallery Item Modal Window Collapsable Info 1
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Client
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Registrar's Office 
+                          %li Student Affairs Marketing
+                    / Gallery Item Modal Window Collapsable Info 2
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Tasks
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Task 1
+                          %li Task 2
+                          %li Task 3
+                    / Gallery Item Modal Window Collapsable Info 3
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Skills
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Web Design &amp; Development
+                          %li HTML, CSS &amp; JavaScript
+                          %li Photoshop &amp; Illustrator
+          / LeRoch Lab
+          %li.gallery-item.all.web
+            / Add filter name as class
+            .image-area
+              %img{alt: "portfolio-thumb", src: "images/proj-leroch-400px.png"}/
+              / Gallery Item Image
+              .transparent-hover
+              %span.plus-button
+              / Gallery Item Description
+              .gallery-item-description
+                %p This text could be a brief blurb about the project and your role in creating it.
+              %button.gallery-show-modal
+            / Gallery Item Title and Category
+            %h5 LeRoch Lab
+            %span.category Website
+            .gallery-modal-container
+              .gallery-inner-container.grey
+                .portfolio-modal
+                  %button.close-button X
+                  .image-area
+                    %img{alt: "portfolio-large-image", src: "images/proj-leroch-595px.png"}/
+                    / Gallery Item Modal Window Image
+                    .portfolio-nav
+                      %button.gallery-prev &lt;
+                      %button.gallery-next &gt;
+                  .details
+                    / Gallery Item Modal Window Title
+                    %h2 LeRoch Lab
+                    / Gallery Item Modal Window Content
+                    .project-info
+                      %span Website
+                      %span.separator ::
+                      %span April 2010 - ongoing
+                    %p.content
+                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
+                      ipsum
+                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
+                      neque.
+                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
+                      vestibulum
+                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                  .collapsable-items-container
+                    / Gallery Item Modal Window Collapsable Info 1
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Client
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Client 1
+                          %li Client 2
+                          %li Client 3
+                    / Gallery Item Modal Window Collapsable Info 2
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Tasks
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Task 1
+                          %li Task 2
+                          %li Task 3
+                    / Gallery Item Modal Window Collapsable Info 3
+                    .collapsable-item
+                      .clickable-area
+                        %button +
+                        / Gallery Item Modal Window Collapsable Info Label
+                        %h4 Skills
+                      .hidden-container
+                        / Gallery Item Modal Window Collapsable Info Content
+                        %ul
+                          %li Web Design &amp; Development
+                          %li HTML, CSS &amp; JavaScript
+                          %li Photoshop &amp; Illustrator
   / Contact Row
-  #row5.row.grey
+  #row6.row.grey
     .width-container
       / Row Headings
       .heading-container
@@ -988,42 +840,45 @@
             %tr
               %td
                 %h1 Contact
-        %h2 Whether you're interested in hiring me for a site buildout, a Rails app, or full-time position, I'm all ears!
+        %h2 Interested in hiring for a site buildout, Rails app, ASP.NET app, or full-time position?  Feel free to contact me.
         .clear
         #form-alert
       / Row Contents
       .content-container
         .container.left
-          %ul.social-disc
-            %li
-              %a.twitter{href: "https://twitter.com/randalmaile", target: "_blank"} Follow me on Twitter
-            %li
-              %a.linkedin{href: "http://www.linkedin.com/in/randalmaile/", target: "_blank"} Connect with me on LinkedIn
+          %p.soc-contact 
+            %a{:href => "http://twitter.com/randalmaile"} 
+              %img{:src => "images/icons/twitter.png", :alt => ""}/ 
+              Connect on twitter
+          %p.soc-contact  
+            %a{:href => "https://www.linkedin.com/in/randalmaile"} 
+              %img{:src => "images/icons/linkedin.png", :alt => ""}/ 
+              Connect through LinkedIn
           / Contact Information
           .contact-details
             %ul
               %li
                 %span.icon-home
                 %span.contact-detail
-                  1102 Turquoise St.
+                  1102 Turquoise St
                   %br/
                   / Contact Address
-                  San Diego, CA  92109
+                  San Diego, CA   92109
                 .clear
               %li
                 %span.icon-mobile-phone
-                %span.contact-detail 858-717-1052
+                %span.contact-detail 858.717.1052
                 / Contact Phone
                 .clear
               %li
                 %span.icon-envelope
-                %span.contact-detail
-                  %a{href: "mailto:randalmaile@gmail.com"} randalmaile@gmail.com
+                %span.contact-detail 
+                  %a{:href => "mailto:randalmaile@gmail.com"} randalmaile@gmail.com
                 / Contact Email
                 .clear
         .left.last
           / Contact Form
-          %form#contact-form
+          %form{action: "https://website-contact.herokuapp.com/", method: "post"}
             .input
               %span Name
               %input{name: "Name", type: "text"}/
@@ -1043,3 +898,6 @@
   .width-container
   #overlay
     %div
+
+
+
