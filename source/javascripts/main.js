@@ -7,13 +7,9 @@
 var twitter_query = '#twitter';
 
 //Set main slider slide speed (in miliseconds)
-var slide_speed = 10000;
-
-
+var slide_speed = 100000;
 
 ///////////////////////////////////////////////
-
-
 
 //Mobile Detection Function
 
