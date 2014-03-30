@@ -69,11 +69,12 @@ and (max-width : 1023px) {
 
     #main-slider-container .main-headings h1,
     #main-slider-container .main-headings h2 {
-        font-size: 22px;
+        /*font-size: 22px;*/
+        font-size: 3.6rem;
     }
 
     #main-slider-container .main-headings h1, #main-slider-container .main-headings h2 {
-        width: 430px;
+        width: 500px;
         padding: 9px 10px;
         line-height: normal;
     }
@@ -102,7 +103,7 @@ and (max-width : 1023px) {
     #main-slider-container .sub-headings h2 {
         width: 310px;
         margin: 0px 0px 10px 0px;
-        font-size: 15px;
+        font-size: 2.2rem;
         padding: 11px 15px 10px 24px !important;
     }
 
@@ -114,7 +115,7 @@ and (max-width : 1023px) {
     #main-slider-container button {
         top: 400px;
         left: 150px;
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     #main-slider-container .flexslider .slides img {
@@ -155,15 +156,15 @@ and (max-width : 1023px) {
     }
 
     #newsletter {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     #newsletter span:first-child {
-        font-size: 19px;
+        font-size: 1.9rem;
     }
 
     #newsletter input {
-        font-size: 16px;
+        font-size: 1.9rem;
     }
 
     #row2 .content-container .container:first-child {
@@ -243,7 +244,7 @@ and (max-width : 1023px) {
     }
 
     .parallax1 .testimonial-container p {
-        font-size: 20px;
+        font-size: 2.0rem;
     }
 
     #process-container {
@@ -310,7 +311,7 @@ and (max-width : 1023px) {
     #gallery-container .gallery-options button {
         padding: 12px 2% 8px;
         margin: 0px 0px 0px 3%;
-        font: 400 13px 'Source Sans Pro', 'serif';
+        font: 700 1.5rem 'Source Sans Pro', 'serif';
     }
 
     #gallery-container .gallery-options:first-child {
@@ -546,12 +547,20 @@ and (min-width : 768px) and (max-width : 1024px) {
         width: 46%;
     }
     .row .heading-container h1 {
-        font-size: 46px;
+        font-size: 4.6rem;
     }
 
     .row .heading-container h2 {
         width: 47%;
         margin: 0px 0px 0px 46%;
+    }
+
+    #main-slider-container li#first .main-headings {
+        top: 55px;
+    }
+
+    #skills-container {
+        margin: 30px 0px 60px 0px;
     }
 
     footer .info p {
@@ -579,6 +588,10 @@ and (max-width : 767px) {
         height: 85px !important;
     }
 
+    #skills-container {
+        margin: 30px 0px 60px 0px;
+    }
+
     .bx-wrapper {
         width: 375px !important;
     }
@@ -594,11 +607,11 @@ and (max-width : 767px) {
     .tinynav {
         display: block;
         width: 31.25% !important;
-        margin: 10px auto 0px !important;
+        margin: 5px auto 0px !important;
         background: #707070 url("../images/arrow-dropdown.png") no-repeat 95% 50%;
-        height: 35px;
+        height: 39px;
         line-height: 35px;
-        font: 600 14px 'Source Sans Pro', 'serif';
+        font: 600 1.8rem 'Source Sans Pro', 'serif';
         padding: 9px 10px;
         color: #fff;
         border: none;
@@ -628,7 +641,7 @@ and (max-width : 767px) {
         -webkit-border-radius: 37px;
         -moz-border-radius: 37px;
         border-radius: 37px;
-        font-size: 34px;
+        font-size: 3.4rem;
     }
 
     .button-container .button1 button {
@@ -664,7 +677,7 @@ and (max-width : 767px) {
     .button-container .button4 button {
         margin: 25px 15px 0px 0px;
         padding: 2px 0px 0px 0px;
-        font-size: 34px;
+        font-size: 3.4rem;
     }
 
     .button-container .button4 span {
@@ -675,7 +688,7 @@ and (max-width : 767px) {
     .button-container .button5 button {
         margin: 50px 0px 0px 0px;
         padding: 0px 0px 10px 2px;
-        font-size: 34px;
+        font-size: 3.4rem;
     }
 
     .button-container .button5 span {
@@ -757,11 +770,11 @@ and (max-width : 767px) {
 
     .process-info-front p {
         line-height: 70.5px !important;
-        font-size: 14px !important;
+        font-size: 1.4rem; !important;
     }
 
     .process-info-back p {
-        font: 600 9px/10px 'Source Sans Pro', 'serif' !important;
+        font: 600 0.9rem/1.0rem 'Source Sans Pro', 'serif' !important;
         width: 90%;
     }
 
@@ -777,15 +790,17 @@ and (max-width : 767px) {
         width: 455px;
         padding: 0px 0px 0px 15px;
     }
-
+    #main-slider-container li#first .main-headings {
+        top: 55px;
+    }
     .parallax1 .testimonial-container .quote-mark {
-        font-size: 60px;
+        font-size: 6.0rem;
     }
 
     .parallax1 .testimonial-container p {
         width: 90%;
         line-height: 28px;
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .parallax1 .testimonial-by-container {
@@ -794,7 +809,7 @@ and (max-width : 767px) {
     }
 
     .parallax1 .testimonial-by-container .testimonial-by {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .parallax1 .testimonial-by-container span {
@@ -864,6 +879,9 @@ and (max-width : 600px) {
     #gallery-container .two-cols .plus-button {
         top: 10%;
     }
+     #main-slider-container li#first .main-headings {
+        top: 55px;
+    }
 }
 
 /* < 480px Layout */
@@ -871,7 +889,7 @@ and (max-width : 600px) {
 @media only screen
 and (max-width : 480px) {
     .logo h1 {
-        font-size: 21px;
+        font-size: 2.1rem;
     }
 
     .row {
@@ -890,11 +908,11 @@ and (max-width : 480px) {
         width: 25px;
         height: 28px;
         right: -25px;
-        font-size: 19px;
+        font-size: 1.9rem;
     }
 
     #options-panel h4 {
-        font-size: 15px;
+        font-size: 1.54rem;
         height: 28px;
         line-height: 29px;
         padding: 0px 0px 0px 10px;
@@ -906,7 +924,7 @@ and (max-width : 480px) {
 
     #options-panel .container .options {
         padding: 10px;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: #fff;
     }
 
@@ -919,16 +937,16 @@ and (max-width : 480px) {
     }
 
     #main-slider-container .main-headings h1, #main-slider-container .main-headings h2 {
-        width: 260px;
+        width: 325px;
         padding: 6px;
     }
 
     #main-slider-container .main-headings h1 {
-        font-size: 18px;
+        font-size: 2.3rem;
     }
 
     #main-slider-container .main-headings h2 {
-        font-size: 13px;
+        font-size: 2.3rem;
     }
 
     #main-slider-container .heading-connector1 {
@@ -947,6 +965,10 @@ and (max-width : 480px) {
         top: 77px;
     }
 
+     #main-slider-container li#first .main-headings {
+        top: 55px;
+    }
+
     #main-slider-container .sub-headings {
         left: 49px;
         top: 163px;
@@ -955,7 +977,7 @@ and (max-width : 480px) {
     #main-slider-container button {
         width: 108px;
         height: 27px;
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 27px;
         top: 300px;
         left: 109px;
@@ -963,13 +985,13 @@ and (max-width : 480px) {
 
     #main-slider-container .sub-headings h2 {
         font-family: 'Source Sans Pro', 'serif';
-        width: 240px;
+        width: 308px;
         padding: 7px 5px 6px 5px !important;
-        font-size: 13px;
+        font-size: 1.8rem;
     }
 
     #main-slider-container .sub-headings span i {
-        font-size: 8px;
+        font-size: 0.8rem;
         margin: 2px 3px 0px 0px;
         line-height: 14px;
     }
@@ -1031,7 +1053,7 @@ and (max-width : 480px) {
 
     .row .heading-container h1 {
         padding-bottom: 5px;
-        font-size: 46px;
+        font-size: 4.6rem;
         text-align: center;
     }
 
@@ -1052,11 +1074,11 @@ and (max-width : 480px) {
     }
 
     #newsletter span:first-child {
-        font-size: 17px;
+        font-size: 1.7rem;
     }
 
     #newsletter span {
-        font-size: 17px;
+        font-size: 1.7rem;
     }
 
     .parallax1 {
@@ -1076,15 +1098,15 @@ and (max-width : 480px) {
     }
 
     .parallax1 .testimonial-container p {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .parallax1 .testimonial-by-container .testimonial-by {
-        font-size: 17px;
+        font-size: 1.7rem;
     }
 
     .parallax1 .testimonial-by-container .testimonial-by-location {
-        font-size: 17px;
+        font-size: 1.7rem;
     }
 
     .parallax2 .width-container {
@@ -1092,15 +1114,15 @@ and (max-width : 480px) {
     }
 
     .parallax2 .width-container h1 {
-        font: 900 32px 'Source Sans Pro', 'serif';
+        font: 900 3.2rem 'Source Sans Pro', 'serif';
     }
 
     .parallax2 .width-container h2 {
-        font: 700 30px 'Source Sans Pro', 'serif';
+        font: 700 3.0rem 'Source Sans Pro', 'serif';
     }
 
     .parallax2 .width-container p {
-        font: 400 15px/18px 'Source Sans Pro', 'serif';
+        font: 400 1.5rem/1.8rem 'Source Sans Pro', 'serif';
     }
 
     #row2 .content-container .container.last {
@@ -1144,7 +1166,7 @@ and (max-width : 480px) {
     }
 
     footer #upper-footer .contact-details ul li .contact-detail {
-        font-size: 13px;
+        font-size: 1.3rem;
     }
 
     .portfolio-modal {
@@ -1152,7 +1174,7 @@ and (max-width : 480px) {
     }
 
     .gallery-inner-container .close-button {
-        font-size: 17px;
+        font-size: 1.7rem;
         margin: -16px 0px -10px 0px;
         position: absolute;
         right: 0px;

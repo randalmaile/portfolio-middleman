@@ -9,6 +9,7 @@ ul.bulletList {
     margin: 0.75em 0 0.75em 2.4em;
     padding: 0 1em;
     list-style: none;
+    font-size: 2rem;
 }
 ul.bulletList li:before { 
     content: "";
@@ -67,6 +68,8 @@ a {
 .zero-marginleft {
     margin-left: 0px !important;
 }
+html {font-size: 62.5%;}
+body {font-size: 14px; font-size: 1.4rem;} /* =14px */
 
 html,
 body {
@@ -117,7 +120,7 @@ header.simple .logo {
 }
 
 .logo h1 {
-    font: 900 24px 'Source Sans Pro', 'serif';
+    font: 900 2.6rem 'Source Sans Pro', 'serif';
     color: #fff;
     cursor: default;
 }
@@ -130,7 +133,7 @@ header.simple .logo {
 
 #main-nav {
     float: right;
-    font: 600 16px 'Source Sans Pro', 'serif';
+    font: 600 1.6rem'Source Sans Pro', 'serif';
     color: #fff;
 }
 
@@ -162,7 +165,7 @@ header.simple #main-nav a {
 }
 
 #main-nav a i {
-    font-size: 25px;
+    font-size: 2.5rem;
     margin: 17px 0px 0px;
     height: 34px;
 }
@@ -180,19 +183,19 @@ header.iconic #main-nav a i {
 }
 
 #main-nav a .icon-heart {
-    font-size: 23px;
+    font-size: 2.3rem;
 }
 
 #main-nav a .icon-rocket {
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 #main-nav a .icon-group {
-    font-size: 23px;
+    font-size: 2.3rem;
 }
 
 #main-nav a .icon-envelope {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 #main-slider-container {
@@ -258,12 +261,12 @@ header.iconic #main-nav a i {
 }
 
 #main-slider-container .main-headings h1 {
-    font-size: 42px;
+    font-size: 4.2rem;
     line-height: 46px;
 }
 
 #main-slider-container .main-headings h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 #main-slider-container .main-headings span {
@@ -303,11 +306,11 @@ header.iconic #main-nav a i {
 }
 
 #main-slider-container .sub-headings h2 {
-    width: 458px;
+    width: 500px;
     padding: 15px 15px 15px 24px;
     background-color: #f9fbfb;
     margin: 0px 0px 14px 60px;
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 #main-slider-container button {
@@ -315,7 +318,7 @@ header.iconic #main-nav a i {
     height: 45px;
     font-family: 'Source Sans Pro', 'serif';
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
     line-height: 45px;
     position: absolute;
@@ -373,6 +376,7 @@ header.iconic #main-nav a i {
 
 }
 
+
 /* Rows */
 
 .row {
@@ -415,11 +419,11 @@ header.iconic #main-nav a i {
 }
 
 .row .content-container h3 {
-    font: 900 28px 'Source Sans Pro', 'serif';
+    font: 900 2.8rem 'Source Sans Pro', 'serif';
 }
 
 .row .content-container p {
-    font: 400 16px/26px 'Source Sans Pro', 'serif';
+    font: 400 1.6rem/2.6rem 'Source Sans Pro', 'serif';
 }
 
 .row .content-container .left:first-child p {
@@ -605,7 +609,7 @@ header.iconic #main-nav a i {
     -moz-border-radius: 58px;
     border-radius: 58px;
     background-color: #fff;
-    font-size: 48px;
+    font-size: 4.8rem;
     -webkit-transition: background 0.2s, color 0.2s;
     -moz-transition: background 0.2s, color 0.2s;
     -o-transition: background 0.2s, color 0.2s;
@@ -682,13 +686,13 @@ header.iconic #main-nav a i {
 .button-container .button4 button {
     margin: 25px 22px 0px 0px;
     padding: 2px 0px 0px 0px;
-    font-size: 54px;
+    font-size: 5.4rem;
 }
 
 .button-container .button5 button {
     margin: 50px 0px 0px 0px;
     padding: 0px 0px 10px 2px;
-    font-size: 51px;
+    font-size: 5.1rem;
 }
 
 .button-container .button1 span {
@@ -757,12 +761,12 @@ header.iconic #main-nav a i {
 }
 
 .row .content-container .service-description h3 {
-    font-size: 22px;
+    font-size: 2.6rem;
     padding: 12px 0px 20px;
 }
 
 .service-description > span:first-child {
-    font-size: 48px;
+    font-size: 4.8rem;
     vertical-align: sub;
     margin: 0px 10px 0px 0px;
     width: 60px;
@@ -797,11 +801,11 @@ header.iconic #main-nav a i {
 }
 
 .service-description.button4 > span:first-child {
-    font-size: 54px;
+    font-size: 5.4rem;
 }
 
 .service-description.button5 > span:first-child {
-    font-size: 51px;
+    font-size: 5.1rem;
 }
 
 /* Parallax */
@@ -864,7 +868,7 @@ header.iconic #main-nav a i {
 }
 
 .parallax1 .testimonial-container .quote-mark {
-    font-size: 120px;
+    font-size: 12.0rem;
     font-weight: 400;
     float: left;
     padding: 10px 0px 0px 0px;
@@ -873,7 +877,7 @@ header.iconic #main-nav a i {
 .parallax1 .testimonial-container p {
     width: 87.6%;
     float: left;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 33px;
     font-weight: 400;
     font-style: italic;
@@ -904,7 +908,7 @@ header.iconic #main-nav a i {
 }
 
 .parallax1 .testimonial-by-container .testimonial-by {
-    font-size: 21px;
+    font-size: 2.1rem;
 }
 
 .parallax1 .testimonial-by-container .testimonial-by-location {
@@ -1102,7 +1106,7 @@ header.iconic #main-nav a i {
 }
 
 #skills-container .skill .skill-name {
-    font: 700 15px 'Source Sans Pro', 'serif';
+    font: 700 1.8rem 'Source Sans Pro', 'serif';
     color: #fff;
     line-height: 34px;
     position: absolute;
@@ -1159,7 +1163,7 @@ header.iconic #main-nav a i {
 }
 
 .collapsable-items-container .collapsable-item .hidden-container p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 23px;
     margin: 4.8% 0px 0px 2.5%;
 }
@@ -1227,7 +1231,7 @@ header.iconic #main-nav a i {
 
 .team-member .team-member-details .links a {
     float: left;
-    font-size: 22px;
+    font-size: 2.2rem;
     width: 25%;
     text-align: center;
 }
@@ -1276,7 +1280,7 @@ header.iconic #main-nav a i {
 #gallery-container .gallery-options button {
     padding: 12px 15px 8px;
     margin: 0px 0px 0px 15px;
-    font: 400 14px 'Source Sans Pro', 'serif';
+    font: 700 1.5rem 'Source Sans Pro', 'serif';
     background-color: transparent;
 }
 
@@ -1462,7 +1466,7 @@ header.iconic #main-nav a i {
 }
 
 #gallery-container .four-cols .gallery-item-description p {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 #gallery-container .column-selector {
@@ -1608,22 +1612,22 @@ header.iconic #main-nav a i {
 }
 
 .contact-details ul li .icon-home {
-    font-size: 24px;
+    font-size: 2.4rem;
     top: 8px;
 }
 
 .contact-details ul li .icon-mobile-phone {
-    font-size: 28px;
+    font-size: 2.8rem;
     top: 6px;
 }
 
 .contact-details ul li .icon-envelope {
-    font-size: 18px;
+    font-size: 1.8rem;
     top: 11px;
 }
 
 .contact-details ul li .contact-detail {
-    font: 400 14px/15px 'Source Sans Pro', 'serif';
+    font: 400 1.4rem/1.5rem 'Source Sans Pro', 'serif';
 }
 
 .input {
@@ -1718,7 +1722,7 @@ form .input:first-child {
 }
 
 .banner button .icon-hand-right {
-    font-size: 48px;
+    font-size: 4.8rem;
     transform: rotate(-15deg);
     -ms-transform: rotate(-15deg);
     -webkit-transform: rotate(-15deg);
@@ -1769,17 +1773,17 @@ footer #upper-footer .contact-details ul li {
 }
 
 footer #upper-footer .contact-details ul li .icon-mobile-phone {
-    font-size: 32px;
+    font-size: 3.2rem;
     top: -1px;
 }
 
 footer #upper-footer .contact-details ul li .icon-envelope {
-    font-size: 20px;
+    font-size: 2.0rem;
     top: 5px;
 }
 
 footer #upper-footer .contact-details ul li .contact-detail {
-    font: 600 16px/22px 'Source Sans Pro', 'serif';
+    font: 600 1.6rem/2.2rem 'Source Sans Pro', 'serif';
     color: #fff;
     opacity: .80;
     filter: alpha(opacity=80);
@@ -1871,7 +1875,7 @@ footer #upper-footer .tweets .more-tweets span {
 
 footer #upper-footer .news ul li.last button .icon-caret-right,
 footer #upper-footer .tweets .more-tweets .icon-caret-right {
-    font-size: 19px;
+    font-size: 1.9rem;
     margin-left: 5px;
 }
 
@@ -1891,7 +1895,7 @@ footer #upper-footer .tweets .tweet-container {
 }
 
 footer #upper-footer .tweets .tweet-container > span:first-child {
-    font-size: 32px;
+    font-size: 3.2rem;
     position: absolute;
     top: -16px;
     left: 6px;
@@ -1958,7 +1962,7 @@ footer #bottom-footer .social-links li {
 
 footer #bottom-footer .social-links li a {
     float: left;
-    font-size: 24px;
+    font-size: 2.4rem;
     margin: 0px 0px 0px 20px;
     cursor: pointer;
 }
@@ -2093,7 +2097,7 @@ footer #top-button {
     position: absolute;
     top: 0px;
     right: -43px;
-    font-size: 25.5px;
+    font-size: 2.55rem;
     color: #fff;
 }
 
