@@ -770,7 +770,7 @@ and (max-width : 767px) {
 
     .process-info-front p {
         line-height: 70.5px !important;
-        font-size: 1.4rem; !important;
+        font-size: 1.4rem !important;
     }
 
     .process-info-back p {
