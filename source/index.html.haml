@@ -845,15 +845,8 @@
         #form-alert
       / Row Contents
       .content-container
-        .container.left
-          %p.soc-contact 
-            %a{:href => "http://twitter.com/randalmaile"} 
-              %img{:src => "images/icons/twitter.png", :alt => ""}/ 
-              Connect on twitter
-          %p.soc-contact  
-            %a{:href => "https://www.linkedin.com/in/randalmaile"} 
-              %img{:src => "images/icons/linkedin.png", :alt => ""}/ 
-              Connect through LinkedIn
+        .container.left  
+          %p  Let us know how we might be able to help. Do you just need to spitball some ideas? Want a quote? Or just wanted to drop a line to say hello. Whatever you need, drop us a line and we’ll get back to you as soon as humanly possible.       
           / Contact Information
           .contact-details
             %ul
@@ -878,22 +871,15 @@
                 .clear
         .left.last
           / Contact Form
-          %form{action: "https://rmwebsite-contact.herokuapp.com/", method: "post"}
-            .input
-              %span Name
-              %input{name: "Name", type: "text"}/
-            .input
-              %span Email
-              %input{name: "Email", type: "email"}/
-            .input
-              %span Subject
-              %input{name: "Subject", type: "text"}/
-            .textarea
-              %span Message
-              %textarea{name: "Message"}
-            %span All fields required
-            %button{type: "submit"} Submit
-            .clear
+          %p
+            %a.very-large.fc-webicon.linkedin{href: "http://www.facebook.com/zurb"}
+
+            %a.very-large.fc-webicon.twitter{href: "http://www.facebook.com/zurb"}
+  
+            %a.very-large.fc-webicon.github{href: "http://www.facebook.com/zurb"}
+   
+            %a.very-large.fc-webicon.tumblr{href: "http://www.facebook.com/zurb"}
+   
         .clear
   .width-container
   #overlay

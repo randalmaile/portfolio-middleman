@@ -879,7 +879,7 @@ header.iconic #main-nav a i {
     font-style: italic;
     padding: 25px 0px 15px 0px;
     text-align: center;
-    }
+}
 
 .parallax1 .testimonial-by-container {
     width: 25%;
@@ -2234,6 +2234,23 @@ p.soc-contact img  {
     top: 25px;
 }
 
+.fc-webicon {
+    float: left;
+    margin-right: 30px;
+}  
+
+.fc-webicon:hover {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    margin-right: 30px;
+}
+
+.fc-webicon.very-large { 
+    width: 100px; 
+    height: 100px; 
+    -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px; 
+    border-radius: 15px;  
+}
 
 
 
