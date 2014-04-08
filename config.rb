@@ -3,7 +3,6 @@ require "lib/twitter_feed"
 ###
 # Global settings
 ##
-activate :imageoptim
 activate :directory_indexes
 activate :twitter_feed
 
