@@ -6,7 +6,7 @@
     .flexslider
       %ul.slides
         / Slide1
-        %li#first{style: "background: url('images/backgrounds/301418407_de4ef324c2_o.jpg');"}
+        %li#first{style: "background: url('images/backgrounds/slide1.jpg');"}
           / Slide Background
           .width-container
             .slider-heading-container
@@ -82,7 +82,7 @@
                 %h2
                   %span
                     %i.icon-chevron-right 
-                  %a{:href => "#row6"} Contact Me 
+                  %a{:href => "#row6", :class => "contact-me"} Contact Me 
                   for employment, a cool app idea or open-source projects
             / %img#slide2-element.slide-element{alt: "slide-element", src: "images/slide2-placeholder-element.png"}/
             / Floating element
@@ -314,23 +314,28 @@
             .gallery-modal-container
               .gallery-inner-container.grey
                 .portfolio-modal
-                  %button.close-button X
+                  / %i.icon-remove
+                  / %button.close-button X
+                  %a.icon-remove
                   .image-area
-                    %img{alt: "portfolio-large-image", src: "images/proj-admissions-595px.png"}/
+                    %a{:href => "http://admissions.ucr.edu"}
+                      %img{alt: "portfolio-large-image", src: "images/proj-admissions-595px.png"}/
+
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
                       %button.gallery-next &gt;
                   .details
                     / Gallery Item Modal Window Title
-                    %h2 UCR Admissions / International Admissions Suite
+                    %h2 
+                      %a{:href => "http://admissions.ucr.edu"} UCR Admissions / International Admissions Suite
                     / Gallery Item Modal Window Content
                     .project-info
                       %span ASP.NET Application Development
                       %span.separator ::
                       %span 2013-2014 ongoing
                     %p.content
-                      Our admissions websites serve a large number of students needs, including application requirements, admissions procedures, deadline and student notification management, social networking integration and custom forms.
+                      Our admissions websites serve a large number of students needs, including application requirements, admissions procedures, deadline and student notification management, social networking integration and custom forms. Build with ASP.NET MVC3 architecture, we leveraged data modeling, web services, external REST APIs and modern web standards to deliver a client-rich user experience.
                   .collapsable-items-container
                     / Gallery Item Modal Window Collapsable Info 1
                     .collapsable-item
@@ -340,7 +345,7 @@
                         %h4 Partners
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
+                        %ul.bulletList
                           %li Student Affairs Communications
                           %li Enrollment Management
                           %li Vice Chancellor - Student Affairs
@@ -352,10 +357,11 @@
                         %h4 Tasks
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
+                        %ul.bulletList
                           %li UX/UI Design
                           %li Front-end coding
-                          %li Dynamic Date / API Integration
+                          %li Dynamic Data / REST API Integration
+                          %li Administrator access interface development
                     / Gallery Item Modal Window Collapsable Info 3
                     .collapsable-item
                       .clickable-area
@@ -364,7 +370,7 @@
                         %h4 Skills
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
+                        %ul.bulletList
                           %li HTML5, CSS3, jQuery, AJAX, custom plugin development
                           %li ASP.NET MVC3, domain modeling, form processing, data validation
                           %li Mercurial Source Control, Project Management
@@ -386,33 +392,35 @@
             .gallery-modal-container
               .gallery-inner-container.grey
                 .portfolio-modal
-                  %button.close-button X
+                  %a.icon-remove
                   .image-area
-                    %img{alt: "portfolio-large-image", src: "images/proj-culinary-595px.png"}/
+                    %a{:href => "http://foodtrucks.ucr.edu"}
+                      %img{alt: "portfolio-large-image", src: "images/proj-culinary-595px.png"}/
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
                       %button.gallery-next &gt;
                   .details
                     / Gallery Item Modal Window Title
-                    %h2 Culinary Chameleon / UCR Food Trucks
+                    %h2 
+                      %a{:href => "http://foodtrucks.ucr.edu"} Culinary Chameleon / UCR Food Trucks
                     / Gallery Item Modal Window Content
                     .project-info
                       %span Responsive Website
                       %span.separator ::
                       %span July 2013
                     %p.content
-                      Implemented the Culinary Chameleon mobile/responsive website to showcase menu, location, hours, polls, twitter feeds and reservation requests forms for our campus food trucks.
+                      Implemented the Culinary Chameleon mobile/responsive website to showcase menu, location, hours, polls, twitter feeds and reservation requests forms for our campus food trucks. Build with ASP.NET MVC3 architecture, we leveraged data modeling, web services, external REST APIs within the context of Zurb Foundation 3's responsive CSS/JS framework to enhance the mobile and tablet experience.
                   .collapsable-items-container
                     / Gallery Item Modal Window Collapsable Info 1
                     .collapsable-item
                       .clickable-area
                         %button +
                         / Gallery Item Modal Window Collapsable Info Label
-                        %h4 Client
+                        %h4 Partners
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
+                        %ul.bulletList
                           %li Student Affairs Communications
                           %li Housing, Dining and Residential Services
                     / Gallery Item Modal Window Collapsable Info 2
@@ -424,9 +432,10 @@
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
                         %ul
+                          %li UX/UI Design
                           %li Front-end coding
-                          %li Responsive web design
-                          %li Dynamic Date / API Integration
+                          %li Dynamic Data / REST API Integration
+                          %li Administrator access interface development
                     / Gallery Item Modal Window Collapsable Info 3
                     .collapsable-item
                       .clickable-area
@@ -435,9 +444,8 @@
                         %h4 Skills
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li HTML5, CSS3, jQuery
-                          %li Zurb Foundation based responsive coding
+                        %ul.bulletList
+                          %li HTML5, CSS3, jQuery, AJAX, custom plugin development
                           %li ASP.NET MVC3, domain modeling, form processing, data validation
                           %li Mercurial Source Control, Project Management
           / UCR Housing
@@ -458,42 +466,38 @@
             .gallery-modal-container
               .gallery-inner-container.grey
                 .portfolio-modal
-                  %button.close-button X
+                  %a.icon-remove
                   .image-area
-                    %img{alt: "portfolio-large-image", src: "images/proj-housing-595px.png"}/
+                    %a{:href => "http://housing.ucr.edu"} 
+                      %img{alt: "portfolio-large-image", src: "images/proj-housing-595px.png"}/
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
                       %button.gallery-next &gt;
                   .details
                     / Gallery Item Modal Window Title
-                    %h2 Project Detail Title
+                    %h2 
+                      %a{:href => "http://housing.ucr.edu"} UCR Housing
                     / Gallery Item Modal Window Content
                     .project-info
                       %span Website
                       %span.separator ::
                       %span February 2013
                     %p.content
-                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                      ipsum
-                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                      neque.
-                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                      vestibulum
-                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                      Delivered a rich digital resource to the UCR student body, our Housing, Dining and Residential Services website features a host of dynamic and interactive content. Interactive maps, dynamic announcements, events and menuing from external data feeds, along with reservation requests and processing forms are just some of the advanced features we build on top of our ASP.NET framework.
                   .collapsable-items-container
                     / Gallery Item Modal Window Collapsable Info 1
                     .collapsable-item
                       .clickable-area
                         %button +
                         / Gallery Item Modal Window Collapsable Info Label
-                        %h4 Client
+                        %h4 Partners
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Client 1
-                          %li Client 2
-                          %li Client 3
+                        %ul.bulletList
+                          %li Housing Dining and Residential Services
+                          %li Student Affairs Communications
+                          %li Student Affairs Enrollment Management
                     / Gallery Item Modal Window Collapsable Info 2
                     .collapsable-item
                       .clickable-area
@@ -502,10 +506,11 @@
                         %h4 Tasks
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Task 1
-                          %li Task 2
-                          %li Task 3
+                        %ul.bulletList
+                          %li UX/UI Design
+                          %li Front-end coding
+                          %li Dynamic data / REST API integration
+                          %li Administrator access and interface development
                     / Gallery Item Modal Window Collapsable Info 3
                     .collapsable-item
                       .clickable-area
@@ -514,10 +519,10 @@
                         %h4 Skills
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Web Design &amp; Development
-                          %li HTML, CSS &amp; JavaScript
-                          %li Photoshop &amp; Illustrator
+                        %ul.bulletList
+                          %li HTML5, CSS3, jQuery, AJAX, custom plugin development
+                          %li ASP.NET Web Forms, domain modeling, form processing, data validation
+                          %li Mercurial source control, poject management
           / Visit UCR
           %li.gallery-item.all.apps
             / Add filter name as class
@@ -528,50 +533,44 @@
               %span.plus-button
               / Gallery Item Description
               .gallery-item-description
-                %p Put in a full description here
+                %p Front-end development + APS.NET Web Forms application development
               %button.gallery-show-modal
             / Gallery Item Title and Category
             %h5 Visit UCR Tours
             %span.category ASP.NET Application Development
             .gallery-modal-container
               .gallery-inner-container.grey
-                %button.close-button X
                 .portfolio-modal
+                  %a.icon-remove  
                   .image-area
-                    %img{alt: "portfolio-large-image", src: "images/proj-visit-595px.png"}/
+                    %a{:href => "http://student08.ucr.edu/em/visitUCR/default.aspx"} 
+                      %img{alt: "portfolio-large-image", src: "images/proj-visit-595px.png"}/
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
                       %button.gallery-next &gt;
                   .details
                     / Gallery Item Modal Window Title
-                    %h2 Project Detail Title
+                    %h2 
+                      %a{:href => "http://student08.ucr.edu/em/visitUCR/default.aspx"} VISIT UCR TOURS
                     / Gallery Item Modal Window Content
                     .project-info
                       %span Application Development
                       %span.separator ::
                       %span February 2013
                     %p.content
-                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                      ipsum
-                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                      neque.
-                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                      vestibulum
-                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                      Built and delivered a comprehensive tour application to the UCR Campus Tours Office.  This provided our client with a one-stop shop for organising and managing tours while providing prospective students and parents an endpoint for scheduling and tracking their tours. Build using ASP.NET Web Forms architecture, we leveraged data modeling, web services, and complex workflows.
                   .collapsable-items-container
                     / Gallery Item Modal Window Collapsable Info 1
                     .collapsable-item
                       .clickable-area
                         %button +
                         / Gallery Item Modal Window Collapsable Info Label
-                        %h4 Client
+                        %h4 Partner
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Client 1
-                          %li Client 2
-                          %li Client 3
+                        %ul.bulletList
+                          %li UCR Campus Tours Office
                     / Gallery Item Modal Window Collapsable Info 2
                     .collapsable-item
                       .clickable-area
@@ -580,10 +579,11 @@
                         %h4 Tasks
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Task 1
-                          %li Task 2
-                          %li Task 3
+                        %ul.bulletList
+                          %li UX/UI Design
+                          %li Front-end coding
+                          %li Dynamic data / REST API integration
+                          %li Administrator access and interface development
                     / Gallery Item Modal Window Collapsable Info 3
                     .collapsable-item
                       .clickable-area
@@ -592,10 +592,10 @@
                         %h4 Skills
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Web Design &amp; Development
-                          %li HTML, CSS &amp; JavaScript
-                          %li Photoshop &amp; Illustrator            
+                        %ul.bulletList
+                          %li HTML5, CSS3, jQuery, AJAX, custom plugin development
+                          %li ASP.NET Web Forms, domain modeling, form processing, data validation
+                          %li Mercurial source control, poject management           
           / International Admissions               
           %li.gallery-item.all.web
             / Add filter name as class
@@ -606,7 +606,7 @@
               %span.plus-button
               / Gallery Item Description
               .gallery-item-description
-                %p This text could be a brief blurb about the project and your role in creating it.
+                %p Front-end development
               %button.gallery-show-modal
             / Gallery Item Title and Category
             %h5 International Admissions
@@ -614,8 +614,9 @@
             .gallery-modal-container
               .gallery-inner-container.grey
                 .portfolio-modal
-                  %button.close-button X
+                  %a.icon-remove
                   .image-area
+                    %a{:href => "http://international.ucr.edu"} 
                     %img{alt: "portfolio-large-image", src: "images/proj-international-595px.png"}/
                     / Gallery Item Modal Window Image
                     .portfolio-nav
@@ -623,33 +624,28 @@
                       %button.gallery-next &gt;
                   .details
                     / Gallery Item Modal Window Title
-                    %h2 UCR International Admissions
+                    %h2 
+                      %a{:href => "http://international.ucr.edu"} UCR International Admissions
                     / Gallery Item Modal Window Content
                     .project-info
                       %span Website
                       %span.separator ::
                       %span April 2010 - ongoing
                     %p.content
-                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                      ipsum
-                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                      neque.
-                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                      vestibulum
-                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                      UCR's International Admissions websites serve the needs of our international prospective students and their families. Interactive and dynamic content includes translation services, embedded videos, custom search, twitter feeds and custom UI developemnt. Build using ASP.NET Web Forms architecture, we leveraged external REST APIs, jQuery plugins and external tranlation services to deliver a client-rich user experience.
                   .collapsable-items-container
                     / Gallery Item Modal Window Collapsable Info 1
                     .collapsable-item
                       .clickable-area
                         %button +
                         / Gallery Item Modal Window Collapsable Info Label
-                        %h4 Client
+                        %h4 Partners
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Client 1
-                          %li Client 2
-                          %li Client 3
+                        %ul.bulletList
+                          %li Student Affairs Communications
+                          %li Enrollment Management
+                          %li Vice Chancellor - Student Affairs
                     / Gallery Item Modal Window Collapsable Info 2
                     .collapsable-item
                       .clickable-area
@@ -658,10 +654,11 @@
                         %h4 Tasks
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Task 1
-                          %li Task 2
-                          %li Task 3
+                        %ul.bulletList
+                          %li UX/UI Design
+                          %li Front-end coding
+                          %li Dynamic Data / REST API Integration
+                          %li Administrator access interface development
                     / Gallery Item Modal Window Collapsable Info 3
                     .collapsable-item
                       .clickable-area
@@ -670,10 +667,10 @@
                         %h4 Skills
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Web Design &amp; Development
-                          %li HTML, CSS &amp; JavaScript
-                          %li Photoshop &amp; Illustrator
+                        %ul.bulletList
+                          %li HTML5, CSS3, jQuery, AJAX, custom plugin development
+                          %li ASP.NET MVC3, domain modeling, form processing, data validation
+                          %li Mercurial Source Control, Project Management
           / Registrar
           %li.gallery-item.all.apps
             / Add filter name as class
@@ -684,47 +681,43 @@
               %span.plus-button
               / Gallery Item Description
               .gallery-item-description
-                %p This text could be a brief blurb about the project and your role in creating it.
+                %p Front-end development + APS.NET Web Forms application development
               %button.gallery-show-modal
             / Gallery Item Title and Category
-            %h5 Registrar
+            %h5 UCR Registrar
             %span.category ASP.NET Application Development
             .gallery-modal-container
               .gallery-inner-container.grey
                 .portfolio-modal
-                  %button.close-button X
+                  %a.icon-remove
                   .image-area
-                    %img{alt: "portfolio-large-image", src: "images/proj-registrar-595px.png"}/
+                    %a{:href => "http://registrar.ucr.edu"} 
+                      %img{alt: "portfolio-large-image", src: "images/proj-registrar-595px.png"}/
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
                       %button.gallery-next &gt;
                   .details
                     / Gallery Item Modal Window Title
-                    %h2 Registrar's Dynamic Website
+                    %h2 
+                      %a{:href => "http://registrar.ucr.edu"} UCR REGISTRAR
                     / Gallery Item Modal Window Content
                     .project-info
                       %span ASP.NET Application Development
                       %span.separator ::
                       %span July 2013
                     %p.content
-                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                      ipsum
-                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                      neque.
-                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                      vestibulum
-                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                      UCR's Registrars websites serve a large number of students needs, including class registration, help desk support, record archiving, and course catalog functionality.  Build using ASP.NET Web Forms architecture, we leveraged data modeling, web services, external REST APIs and modern web standards to deliver a client-rich user experience.
                   .collapsable-items-container
                     / Gallery Item Modal Window Collapsable Info 1
                     .collapsable-item
                       .clickable-area
                         %button +
                         / Gallery Item Modal Window Collapsable Info Label
-                        %h4 Client
+                        %h4 Partners
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
+                        %ul.bulletList
                           %li Registrar's Office 
                           %li Student Affairs Marketing
                     / Gallery Item Modal Window Collapsable Info 2
@@ -735,10 +728,11 @@
                         %h4 Tasks
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Task 1
-                          %li Task 2
-                          %li Task 3
+                        %ul.bulletList
+                          %li UX/UI Design
+                          %li Front-end coding
+                          %li Dynamic Data / REST API Integration
+                          %li Administrator access interface development
                     / Gallery Item Modal Window Collapsable Info 3
                     .collapsable-item
                       .clickable-area
@@ -747,7 +741,7 @@
                         %h4 Skills
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
+                        %ul.bulletList
                           %li Web Design &amp; Development
                           %li HTML, CSS &amp; JavaScript
                           %li Photoshop &amp; Illustrator
@@ -761,7 +755,7 @@
               %span.plus-button
               / Gallery Item Description
               .gallery-item-description
-                %p This text could be a brief blurb about the project and your role in creating it.
+                %p UI/UX Design + Front-end development
               %button.gallery-show-modal
             / Gallery Item Title and Category
             %h5 LeRoch Lab
@@ -769,29 +763,25 @@
             .gallery-modal-container
               .gallery-inner-container.grey
                 .portfolio-modal
-                  %button.close-button X
+                  %a.icon-remove
                   .image-area
-                    %img{alt: "portfolio-large-image", src: "images/proj-leroch-595px.png"}/
+                    %a{:href => "http://lerochlab.ucr.edu"} 
+                      %img{alt: "portfolio-large-image", src: "images/proj-leroch-595px.png"}/
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
                       %button.gallery-next &gt;
                   .details
                     / Gallery Item Modal Window Title
-                    %h2 LeRoch Lab
+                    %h2 
+                      %a{:href => "http://lerochlab.ucr.edu"} LeRoch Lab
                     / Gallery Item Modal Window Content
                     .project-info
                       %span Website
                       %span.separator ::
                       %span April 2010 - ongoing
                     %p.content
-                      Lorem ipsum dolor sit amet, consectetur adipis lescing elit. In id purus sit amet
-                      ipsum
-                      varius semper et ut turpis. Nam egestas sapien sit amet tellus ornare feugiat. Mauris quis nunc
-                      neque.
-                      Duis posuere felis et leo lacinia, eu vestibulum lectus mattis. Vivamus porta eu libero
-                      vestibulum
-                      aliquet. Cras mi est, ultricies sed mauris in placerat tincidunt.
+                      The LeRoch labaratory website serves a large number of collaborators, colleagues, as well as univerity faculty and student needs.  The site tells a story and paints a rich picture of the investigator's research programs, team members, publications and relevant technology. Built with standard web technologies that adhere to web standards.
                   .collapsable-items-container
                     / Gallery Item Modal Window Collapsable Info 1
                     .collapsable-item
@@ -801,10 +791,8 @@
                         %h4 Client
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Client 1
-                          %li Client 2
-                          %li Client 3
+                        %ul.bulletList
+                          %li Le Roch Laboratory - UCR
                     / Gallery Item Modal Window Collapsable Info 2
                     .collapsable-item
                       .clickable-area
@@ -813,10 +801,11 @@
                         %h4 Tasks
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Task 1
-                          %li Task 2
-                          %li Task 3
+                        %ul.bulletList
+                          %li UI/UX
+                          %li Front-end coding
+                          %li Graphics/Image manipulation
+                          %li Wordpress Developmemt
                     / Gallery Item Modal Window Collapsable Info 3
                     .collapsable-item
                       .clickable-area
@@ -825,10 +814,10 @@
                         %h4 Skills
                       .hidden-container
                         / Gallery Item Modal Window Collapsable Info Content
-                        %ul
-                          %li Web Design &amp; Development
-                          %li HTML, CSS &amp; JavaScript
-                          %li Photoshop &amp; Illustrator
+                        %ul.bulletList
+                          %li Stardards-based HTML &amp; CSS
+                          %li Photoshop / Illustrator
+                          %li Custom Javascript development
   / Contact Row
   #row6.row.grey
     .width-container
@@ -865,19 +854,19 @@
               %li
                 %span.icon-envelope
                 %span.contact-detail 
-                  %a{:href => "mailto:randalmaile@gmail.com"} randalmaile@gmail.com
+                  %a{:href => "mailto:randalmaile@gmail.com?Subject=Portfolio%20Inquiry"} randalmaile@gmail.com
                 / Contact Email
                 .clear
         .left.last
           / Contact Form
           %p
-            %a.very-large.fc-webicon.linkedin{href: "http://www.facebook.com/zurb"}
+            %a.very-large.fc-webicon.linkedin{href: "https://www.linkedin.com/in/randalmaile", target: "_blank"}
 
-            %a.very-large.fc-webicon.twitter{href: "http://www.facebook.com/zurb"}
+            %a.very-large.fc-webicon.twitter{href: "https://twitter.com/randalmaile", target: "_blank"}
   
-            %a.very-large.fc-webicon.github{href: "http://www.facebook.com/zurb"}
+            %a.very-large.fc-webicon.github{href: "https://github.com/randalmaile", target: "_blank"}
    
-            %a.very-large.fc-webicon.tumblr{href: "http://www.facebook.com/zurb"}
+            %a.very-large.fc-webicon.tumblr{href: "http://***REMOVED***/", target: "_blank"}
    
         .clear
   .width-container

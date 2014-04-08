@@ -1,0 +1,14 @@
+clown car configs
+
+- config.rb
+  activate :clowncar
+  generate_clowncar "proj-admissions"
+
+- Gemfile
+  gem 'middleman-clowncar'
+
+- index.html.haml
+  = clowncar_tag "proj-admissions"
+
+- directories
+  put images in separate folder inside images dir

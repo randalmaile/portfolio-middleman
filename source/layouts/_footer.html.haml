@@ -21,46 +21,43 @@
             %li
               %span.icon-envelope
               %span.contact-detail 
-                %a{:href => "mailto:randalmaile@gmail.com"} randalmaile@gmail.com
+                %a{:href => "mailto:randalmaile@gmail.com?Subject=Portfolio%20Inquiry"}  randalmaile@gmail.com
               / Contact Email
               .clear
       / News Section
+
       .news
-        %h3 LATEST POSTS
-        / = tumblr_info
-        %ul
-          / News 1
-          %li
-            / News Date
-            .date
-              %span.day 16
-              %span.month Jul
-            / News Description
-            %span Mauris non mattis libero. Curabitur pellentesque massa vitae…
-          / News 1
-          %li
-            / News Date
-            .date
-              %span.day 12
-              %span.month Jul
-            / News Description
-            %span Mauris non mattis libero. Curabitur pellentesque massa vitae…
-          / News 1
-          %li
-            / News Date
-            .date
-              %span.day 08
-              %span.month Jul
-            / News Description
-            %span Mauris non mattis libero. Curabitur pellentesque massa vitae…
-          %li.last
+        %h3 MY BLOG POSTS      
+        <script id="tmpl-link" type="text/x-jsrender">
+        <article id="post-{{:id}}" class="post-{{:type}}">
+        <li>
+        <div class="date">
+        <span class="day"></span>
+        <span class="month"></span>
+        </div>
+        <a href="{{:post_url}}">{{:title}}</a>
+        / {{:description}}
+        </li>
+        </article>
+        </script>
+        
+        %ul#tumblr-posts
+          %span.tumblr-api-loading Loading posts&#8230;
+        #more-button-container
+          %a.more-posts{href: "http://***REMOVED***", target: "_blank"}
+            %span more posts
+            %span.icon-caret-right
+          .clear
+
       / Tweets Section
       .tweets
         %h3 RECENT TWEETS
         .tweet-container
           %span.icon-twitter
           #tweet-inner-container
-
+            %ul
+              - tweet_news.each do |tweet|
+                %li= auto_link(tweet.text)
           #more-button-container
             %a.more-tweets{href: "https://twitter.com/randalmaile", target: "_blank"}
               %span more tweets
@@ -84,6 +81,9 @@
             / Pinterest Link
           %li
             %a.icon-twitter{href: "https://twitter.com/randalmaile"}
+            / Twitter Link
+          %li
+            %a.icon-tumblr{href: "http://***REMOVED***"}
             / Twitter Link
       / Footer Navigation links
       %ul.nav

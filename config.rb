@@ -1,13 +1,12 @@
-# require "lib/twitter_feed"
-# require "lib/tumblr_feed"
+require "lib/twitter_feed"
 
 ###
 # Global settings
-###
-
+##
+activate :imageoptim
 activate :directory_indexes
-# activate :twitter_feed
-# activate :tumblr_feed
+activate :twitter_feed
+
 ###
 # Compass
 ###
