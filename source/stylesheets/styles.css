@@ -390,7 +390,7 @@ header.iconic #main-nav a i {
 }
 
 .row .heading-container h1 {
-    font: 900 54px 'Core Sans N 95 Black', 'serif';
+    font: 900 5.4rem'Core Sans N 95 Black', 'serif';
     text-transform: uppercase;
     letter-spacing: -4px;
 }
@@ -411,7 +411,7 @@ header.iconic #main-nav a i {
 
 .row .heading-container h2 {
     width: 57%;
-    font: 400 28px/38px 'Source Sans Pro', 'serif';
+    font: 400 2.8rem/3.8rem 'Source Sans Pro', 'serif';
     float: left;
     padding: 26px 25px 26px 85px;
     border-left: 1px solid #000;
@@ -487,7 +487,7 @@ header.iconic #main-nav a i {
 }
 
 #row6 #form-alert p{
-    font: 400 16px/26px 'Source Sans Pro', 'serif';
+    font: 400 1.6px/2.6px 'Source Sans Pro', 'serif';
     padding: 10px 0px;
     color: #fff;
 }
@@ -497,12 +497,13 @@ header.iconic #main-nav a i {
 }
 
 #row6 .content-container .container:first-child {
-    width: 27%;
+    width: 31%;
     margin: 0px 3.2% 0px 0px;
 }
 
 #row6 .left.last {
-    width: 69.8%;
+    width: 65.8%;
+    margin-top: 30px;
 }
 
 #row6 form > span {
@@ -796,7 +797,7 @@ header.iconic #main-nav a i {
     display: block;
     top: 84px;
     position: absolute;
-    right: -38px;
+    right: -58px;
     z-index: -1;
 }
 
@@ -1020,7 +1021,7 @@ header.iconic #main-nav a i {
 }
 
 .process-info-front p {
-    font: 600 18px/120px 'Source Sans Pro', 'serif' !important;
+    font: 600 1.8rem/12.0rem 'Source Sans Pro', 'serif' !important;
     color: #fff;
     margin: 0 !important;
 }
@@ -1042,7 +1043,7 @@ header.iconic #main-nav a i {
 }
 
 .process-info-back p {
-    font: 600 14px/18px 'Source Sans Pro', 'serif' !important;
+    font: 600 1.4rem/1.8rem 'Source Sans Pro', 'serif' !important;
     color: #fff;
     margin: 0 auto !important;
     width: 105px;
@@ -1140,7 +1141,7 @@ header.iconic #main-nav a i {
 }
 
 .collapsable-items-container .collapsable-item h4 {
-    font: 400 22px/26px 'Source Sans Pro', 'serif';
+    font: 400 2.2rem/2.6rem 'Source Sans Pro', 'serif';
 }
 
 .collapsable-items-container .collapsable-item button {
@@ -1263,7 +1264,7 @@ header.iconic #main-nav a i {
 .parallax2 .width-container p {
     width: 58.5%;
     margin: 20px auto 0px;
-    font: 400 16px/24px 'Source Sans Pro', 'serif';
+    font: 400 1.6rem/2.4rem 'Source Sans Pro', 'serif';
 }
 
 .parallax2 button {
@@ -1461,7 +1462,7 @@ header.iconic #main-nav a i {
 #gallery-container .gallery-item-description p {
     width: 90%;
     margin: 0 auto;
-    font: 700 16px/18px 'Source Sans Pro', 'serif';
+    font: 700 1.6rem/1.8rem 'Source Sans Pro', 'serif';
     color: #fff;
 }
 
@@ -1492,13 +1493,13 @@ header.iconic #main-nav a i {
 }
 
 .parallax3 .width-container h1 {
-    font: 900 48px/50px 'Source Sans Pro', 'serif';
+    font: 900 4.8rem/5.0rem 'Source Sans Pro', 'serif';
 }
 
 .parallax3 .width-container p {
     width: 58.59375%;
     margin: 40px auto 0px;
-    font: 400 22px/28px 'Source Sans Pro', 'serif';
+    font: 400 2.2rem/2.8rem 'Source Sans Pro', 'serif';
 }
 
 /* Testimonial Area */
@@ -1517,7 +1518,7 @@ header.iconic #main-nav a i {
 }
 
 #testimonials .testimonial p {
-    font: 400 17px/23px 'Source Sans Pro', 'serif';
+    font: 400 1.7rem/2.3rem 'Source Sans Pro', 'serif';
     color: #464646;
 }
 
@@ -1686,7 +1687,7 @@ form .input:first-child {
 .banner {
     width: 96.289%;
     margin: 65px auto 65px;
-    font: 600 22px/29px 'Source Sans Pro', 'serif';
+    font: 600 2.2rem/2.9rem 'Source Sans Pro', 'serif';
     color: #fff;
     padding: 25px 0px;
     position: relative;
@@ -1714,7 +1715,7 @@ form .input:first-child {
 }
 
 .banner button span:first-child {
-    font: 700 24px/24px 'Source Sans Pro', 'serif';
+    font: 700 2.4rem/2.4rem 'Source Sans Pro', 'serif';
     width: 120px;
     text-align: right;
     display: block;
@@ -1739,8 +1740,8 @@ footer {
 
 footer p,
 footer #upper-footer .news ul li > span {
-    opacity: .60;
-    filter: alpha(opacity=60);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
     color: #fff;
 }
 
@@ -1750,7 +1751,7 @@ footer #upper-footer {
 
 footer #upper-footer .info {
     width: 22.94921875%;
-    font: 400 14px/20px 'Source Sans Pro', 'serif';
+    font: 400 1.4rem/2.0rem 'Source Sans Pro', 'serif';
     float: left;
 }
 
@@ -1799,6 +1800,18 @@ footer #upper-footer h3 {
     font: 600 16px 'Source Sans Pro', 'serif';
 }
 
+footer #upper-footer .news,footer #upper-footer .news a,footer #upper-footer .news p {
+    font: 400 1.4rem/2rem 'Source Sans Pro','serif';
+}
+
+footer #upper-footer .news a {
+    font-size: 1.7rem;
+    color: #01A97A;
+}
+footer #upper-footer .news a:hover {
+    text-decoration: underline;
+}
+
 footer #upper-footer .news h3 {
     margin: 0px 0px 0px 15px;
 }
@@ -1830,7 +1843,8 @@ footer #upper-footer .news ul {
 footer #upper-footer .news ul li {
     border-bottom: 1px solid #000000;
     border-top: 1px solid #555555;
-    padding: 22px 10px 20px 10px;
+    padding: 14px 10px 12px 10px;
+    overflow: hidden;
 }
 
 footer #upper-footer .news ul li:first-child {
@@ -1838,7 +1852,7 @@ footer #upper-footer .news ul li:first-child {
 }
 
 footer #upper-footer .news ul li > span {
-    font: 400 14px/17px 'Source Sans Pro', 'serif';
+    font: 400 1.4rem/1.7rem 'Source Sans Pro', 'serif';
 }
 
 footer #upper-footer .news ul li.last,
@@ -1853,7 +1867,7 @@ footer #upper-footer .tweets .more-tweets {
     font: 400 14px 'Source Sans Pro', 'serif';
     font-style: italic;
     background-color: transparent;
-    float: right;
+    float: left;
 }
 
 footer #upper-footer .tweets #more-button-container {
@@ -1906,9 +1920,17 @@ footer #upper-footer .tweets .tweet-container ul {
 }
 
 footer #upper-footer .tweets .tweet-container ul li {
+    font: 400 1.4rem/1.7rem 'Source Sans Pro','serif';
+    color: #FFFFFF;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
     border-bottom: 1px solid #000000;
     border-top: 1px solid #555555;
     padding: 25px 0px 20px 0px;
+}
+
+footer #upper-footer .tweets .tweet-container ul li a {
+    color: #01A97A;
 }
 
 footer #upper-footer .tweets .tweet-container ul li:first-child {
@@ -1916,14 +1938,14 @@ footer #upper-footer .tweets .tweet-container ul li:first-child {
 }
 
 footer #upper-footer .tweets .tweet-container ul li span {
-    font: 400 14px/17px 'Source Sans Pro', 'serif';
+    font: 400 1.4rem/1.7rem 'Source Sans Pro', 'serif';
     color: #fff;
     opacity: .80;
     filter: alpha(opacity=80);
 }
 
 footer #upper-footer .tweets .tweet-container ul li .hashtag {
-    font: 400 16px/17px 'Source Sans Pro', 'serif';
+    font: 400 1.6rem/1.7rem 'Source Sans Pro', 'serif';
     display: block;
     margin: 4px 0px 0px 0px;
 }
@@ -2106,8 +2128,9 @@ footer #top-button {
 .gallery-inner-container {
     position: fixed;
     width: 974px;
-    max-height: 700px;
-    top: 100px;
+    /*max-height: 700px;*/
+    height: 90%;
+    top: 50px;
     left: 50%;
     margin-left: -512px;
     -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
@@ -2124,6 +2147,7 @@ footer #top-button {
 
 .portfolio-modal {
     overflow: auto;
+    /*overflow: scroll;*/
     -webkit-overflow-scrolling: touch;
     padding: 24px;
     height: 100%;
@@ -2164,12 +2188,12 @@ footer #top-button {
 
 .portfolio-modal .details p {
     width: 100%;
-    font: 300 16px/23px 'Source Sans Pro', 'serif';
+    font: 300 1.6rem/2.3rem 'Source Sans Pro', 'serif';
     margin: 25px 0px 40px 0px;
 }
 
 .portfolio-modal .portfolio-nav {
-    margin: -25px auto 0px;
+    margin:5px auto 0px;
     width: 70px;
 }
 
@@ -2229,24 +2253,12 @@ footer #top-button {
     display: none;
 }
 
-/* Contact Soc Net Disks */
-p.soc-contact {
-    margin-top: 0 !important;
-}
-p.soc-contact img  {
-    position: relative;
-    top: 25px;
-}
 
+/* Soc networking icons - svg */
 .fc-webicon {
     float: left;
-    margin-right: 30px;
+    margin: 0 50px 25px 0;
 }  
-
-.fc-webicon:hover {
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
-    margin-right: 30px;
-}
 
 .fc-webicon.very-large { 
     width: 100px; 
@@ -2255,6 +2267,61 @@ p.soc-contact img  {
     -moz-border-radius: 15px; 
     border-radius: 15px;  
 }
+
+/* Tumblr Container */
+footer #upper-footer .news #more-button-container {
+    margin: 3px auto 0;
+    padding: 8px 0;
+    width: 100%;    
+}
+
+footer #upper-footer .news #more-button-container .more-posts{
+    color: #01A97A;
+    float: left;
+    font: italic 400 14px 'Source Sans Pro','serif';
+    padding-left: 12px;
+    text-decoration: none;
+}
+
+footer #upper-footer .news #more-button-container .more-posts span {
+    display: block;
+    float: left;
+    line-height: 17px;
+}
+
+footer #upper-footer .news #more-button-container .more-posts .icon-caret-right {
+    font-size: 1.9rem;
+    margin-left: 5px;
+}
+
+/* Assorted Styles */
+ 
+#main-slider-container .flexslider li#third a.contact-me {
+    text-decoration: underline;
+    color: #01A97A;
+    font-weight: bold;
+}
+
+.portfolio-modal a[class^="icon-"] {
+    font-size: 2.7rem;
+    float: right; 
+    position: relative;
+    top: -4px;
+    right: 7px;
+}
+.portfolio-modal a[class^="icon-"]:hover {
+    cursor: pointer;
+}
+
+.portfolio-modal .details h2 a:hover {
+    text-decoration: underline;
+}
+
+.portfolio-modal .collapsable-item ul.bulletList {
+    margin-left: 18px;
+}
+
+
 
 
 

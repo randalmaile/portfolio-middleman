@@ -171,3 +171,24 @@
         / Row Contents
         .clear
 
+
+
+/ Contact Form
+
+    %form{action: "https://rmwebsite-contact.herokuapp.com/", method: "post"}
+            .input
+              %span Name
+              %input{name: "Name", type: "text"}/
+            .input
+              %span Email
+              %input{name: "Email", type: "email"}/
+            .input
+              %span Subject
+              %input{name: "Subject", type: "text"}/
+            .textarea
+              %span Message
+              %textarea{name: "Message"}
+            %span All fields required
+            %button{type: "submit"} Submit
+            .clear
+

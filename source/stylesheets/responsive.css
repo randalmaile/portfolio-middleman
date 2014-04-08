@@ -12,7 +12,7 @@ and (max-width : 1023px) {
     }
 
     header.iconic {
-        height: 114px;
+        height: 121px;
     }
 
     header.simple {
@@ -21,7 +21,7 @@ and (max-width : 1023px) {
 
     header .width-container {
         width: 100%;
-        height: 114px;
+        height: 121px;
         overflow: hidden;
     }
 
@@ -414,6 +414,10 @@ and (max-width : 1023px) {
         float: none;
     }
 
+    footer #bottom-footer .social-links ul{
+        display: inline-block;
+    }
+
     footer #upper-footer .news h3 {
         margin: 0px 0px 0px 0px;
     }
@@ -424,7 +428,7 @@ and (max-width : 1023px) {
     }
 
     footer #upper-footer .news ul li {
-        padding: 22px 10px 20px 0px;
+        padding: 18px 10px 16px 0px;
     }
 
     footer #upper-footer .contact-details ul li .contact-detail {
@@ -476,8 +480,7 @@ and (max-width : 1023px) {
     .gallery-inner-container {
         width: 76%;
         margin-left: -40%;
-        top: 80px;
-        height: 70%;
+        top: 35px;
     }
 
     .portfolio-modal {
@@ -554,6 +557,11 @@ and (min-width : 768px) and (max-width : 1024px) {
         width: 47%;
         margin: 0px 0px 0px 46%;
     }
+
+    .fc-webicon {
+        /*margin: 0 40px 25px 0;*/
+        margin: 0 7% 25px 0;
+    }  
 
     #main-slider-container li#first .main-headings {
         top: 55px;
@@ -868,10 +876,20 @@ and (max-width : 767px) {
     }
 
     footer #upper-footer .news ul li {
-        padding: 22px 10px 40px 0px;
+        padding: 14px 10px 12px 0px;
     }
 }
 
+@media only screen
+and (max-width : 666px) {
+    .fc-webicon.very-large {
+        border-radius: 15px;
+        /*height: 75px;
+        width: 75px;*/
+        height: 8.5rem;
+        width: 8.5rem;
+    }
+}
 /* < 600px Layout */
 
 @media only screen
@@ -881,6 +899,19 @@ and (max-width : 600px) {
     }
      #main-slider-container li#first .main-headings {
         top: 55px;
+    }
+
+    #main-slider-container li#first .main-headings {
+        top: 55px;
+    }
+
+    #row6 .left.last {
+    width: 100%;
+    }
+
+    .fc-webicon {
+        /*margin: 0 40px 25px 0;*/
+        margin: 0 5% 25px 0;
     }
 }
 
