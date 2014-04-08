@@ -18,5 +18,4 @@ gem 'haml'
 gem 'bootstrap-sass'
 gem 'twitter'
 gem 'twitter-text'
-gem "middleman-imageoptim", "~> 0.1.4"
 
