@@ -1,0 +1,12 @@
+//= require jquery-1.10.2.min
+//= require jquery.flexslider-min
+//= require jquery-migrate-1.2.1.min
+//= require modernizr.custom
+//= require jsrender.min
+//= require jquery.tumblr-kit.min
+//= require jquery.mixitup.min
+//= require jquery.bxslider.min
+//= require jquery.pause.min
+//= require jquery.bgpos
+//= require tinynav
+//= require main
