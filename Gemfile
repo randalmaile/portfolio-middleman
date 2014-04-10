@@ -7,8 +7,8 @@ gem "middleman", "~>3.2.0"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
-gem "image_optim"
-gem "middleman-imageoptim", "~> 0.1.4"
+gem "image_optim", "~> 0.9.1"
+gem "middleman-imageoptim"
 
 # gem "middleman-deploy"
 
