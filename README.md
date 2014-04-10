@@ -4,7 +4,7 @@ Giving the web community a taste of what I have worked on both within an organiz
 
 The site features custom responsive design elements, modern css-preprocessing, jQuery user interfaces, built using the Middleman (Ruby) static website crafting framework and intended for Heroku deployment.
 
-*Check out my work @ [randalmaile.com] (http://randalmaile.com)*
+**Check out my work @ [randalmaile.com] (http://randalmaile.com)**
 
 ## Technologies used
 
