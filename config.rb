@@ -98,7 +98,6 @@ configure :build do
   options.jpegoptim_options = {:strip => ['all'], :max_quality => 100}
   options.jpegtran_options  = {:copy_chunks => false, :progressive => true, :jpegrescan => true}
   options.gifsicle_options  = {:interlace => false}
-  options.svgo_options      = {}
 end
 
   # For example, change the Compass output style for deployment
