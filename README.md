@@ -12,12 +12,11 @@ The site features custom responsive design elements, modern css-preprocessing, j
 
  - Custom responsive design architecture(handrolled)
  - [jQuery 1.10.2](http://jquery.com/)
- - Assorted jQuery plugins (various)
+ - Assorted jQuery plugins
  - javascript customization - responsive (handrolled)
  - [Sass 3.2.1](http://sass-lang.com/)
  - [Webfonts - FontAwesome](http://fortawesome.github.io/Font-Awesome/)
  - [Tumblr - AJAX - Tumblr v2 API integration](https://github.com/matthewbuchanan/tumblr-kit)
- - [ui-sortable](https://github.com/angular-ui/ui-sortable)
 
 ### Backend
  - [Middleman architecture - Ruby](http://middlemanapp.com/)
