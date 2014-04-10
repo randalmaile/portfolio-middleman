@@ -12,7 +12,7 @@ The site features custom responsive design elements, modern css-preprocessing, j
 ## Learn more @
  - [LinkedIn] (https://www.linkedin.com/in/randalmaile)
 
-## Follow me on:
+## Follow me :
  - [Twitter] (https://twitter.com/randalmaile)
  - [Tumblr] (http://***REMOVED***/)
 
