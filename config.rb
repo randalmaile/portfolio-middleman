@@ -6,10 +6,6 @@ require "lib/twitter_feed"
 activate :directory_indexes
 activate :twitter_feed
 
-activate :imageoptim do |options|
-  options.pngout_options    =  false # Should disable pngout
-end
-
 ###
 # Compass
 ###
@@ -81,6 +77,11 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  
+  activate :imageoptim do |options|
+    options.pngout_options    =  false # Should disable pngout
+  end
+
   # For example, change the Compass output style for deployment
   activate :minify_css
 
