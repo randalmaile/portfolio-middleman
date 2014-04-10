@@ -1,4 +1,4 @@
-# [Randal Maile's Personal Portfolio] (http://randalmaile.com)
+# [Randal Maile's Porfessional Portfolio] (http://randalmaile.com)
 
 Giving the web community a taste of what I have worked on both within an organizational setting as well as independent client work and ongoing professional development.  I love to learn new technologies and have focused on front-end development as well as ASP.NET and Ruby on Rails web programming.
 
