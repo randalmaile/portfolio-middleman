@@ -7,6 +7,9 @@ gem "middleman", "~>3.2.0"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
+gem "image_optim"
+gem "middleman-imageoptim", "~> 0.1.4"
+
 # gem "middleman-deploy"
 
 # # Cross-templating language block fix for Ruby 1.8
