@@ -21,8 +21,7 @@ The site features custom responsive design elements, modern css-preprocessing, j
 ### Backend
  - [Middleman architecture - Ruby](http://middlemanapp.com/)
  - [Ruby 2.0.0p247](http://www.ruby-lang.org/en/)
- - [Tumblr](http://rubyonrails.org/)
- - [Pretty URLs](directory indexes)
+ - Pretty URLs (directory indexes)
  - [Sprockets: Rack-based asset packaging](https://github.com/sstephenson/sprockets)
  - [Twitter Ruby Gem 5.8.0 - Twitter API integration](https://github.com/sferik/twitter)
  - [Twitter-text Ruby Gem - Text processing routines for Twitter Tweets](https://github.com/twitter/twitter-text-rb)
