@@ -6,6 +6,7 @@ require "lib/twitter_feed"
 activate :directory_indexes
 activate :twitter_feed
 activate :dotenv
+activate :minify_html
 ###
 # Compass
 ###

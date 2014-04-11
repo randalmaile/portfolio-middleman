@@ -1,7 +1,7 @@
 #main-body-container
   / Main Slider Container
   #main-slider-container
-    %img{alt: "slider-loading-animation", src: "images/loading.gif"}/
+    = image_tag 'loading.gif', :class => 'logo'
     / Main Slider
     .flexslider
       %ul.slides
@@ -300,7 +300,7 @@
           %li.gallery-item.all.apps
             / Add filter name as class
             .image-area
-              %img{alt: "portfolio-thumb", src: "images/proj-admissions-400px.png"}/
+              = image_tag "images/proj-admissions-400px.png", alt: "portfolio-thumb"
               / Gallery Item Image
               .transparent-hover
               %span.plus-button
@@ -319,8 +319,7 @@
                   %a.icon-remove
                   .image-area
                     %a{:href => "http://admissions.ucr.edu"}
-                      %img{alt: "portfolio-large-image", src: "images/proj-admissions-595px.png"}/
-
+                      = image_tag "images/proj-admissions-595px.png", alt: "portfolio-large-image"
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
@@ -378,7 +377,7 @@
           %li.gallery-item.all.responsive
             / Add filter name as class
             .image-area
-              %img{alt: "portfolio-thumb", src: "images/proj-culinary-400px.png"}/
+              = image_tag "images/proj-culinary-400px.png", alt: "portfolio-thumb"
               / Gallery Item Image
               .transparent-hover
               %span.plus-button
@@ -395,7 +394,7 @@
                   %a.icon-remove
                   .image-area
                     %a{:href => "http://foodtrucks.ucr.edu"}
-                      %img{alt: "portfolio-large-image", src: "images/proj-culinary-595px.png"}/
+                      = image_tag "images/proj-culinary-595px.png", alt: "portfolio-large-image"
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
@@ -452,7 +451,7 @@
           %li.gallery-item.all.web
             / Add filter name as class
             .image-area
-              %img{alt: "portfolio-thumb", src: "images/proj-housing-400px.png"}/
+              = image_tag "images/proj-housing-400px.png", alt: "portfolio-thumb"
               / Gallery Item Image
               .transparent-hover
               %span.plus-button
@@ -469,7 +468,7 @@
                   %a.icon-remove
                   .image-area
                     %a{:href => "http://housing.ucr.edu"} 
-                      %img{alt: "portfolio-large-image", src: "images/proj-housing-595px.png"}/
+                      = image_tag "images/proj-housing-595px.png", alt: "portfolio-large-image"
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
@@ -527,7 +526,7 @@
           %li.gallery-item.all.apps
             / Add filter name as class
             .image-area
-              %img{alt: "portfolio-thumb", src: "images/proj-visit-400px.png"}/
+              = image_tag "images/proj-visit-400px.png", alt: "portfolio-thumb"
               / Gallery Item Image
               .transparent-hover
               %span.plus-button
@@ -544,7 +543,7 @@
                   %a.icon-remove  
                   .image-area
                     %a{:href => "http://student08.ucr.edu/em/visitUCR/default.aspx"} 
-                      %img{alt: "portfolio-large-image", src: "images/proj-visit-595px.png"}/
+                      = image_tag "images/proj-visit-595px.png", alt: "portfolio-large-image"
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
@@ -600,7 +599,7 @@
           %li.gallery-item.all.web
             / Add filter name as class
             .image-area
-              %img{alt: "portfolio-thumb", src: "images/proj-international-400px.png"}/
+              = image_tag "images/proj-international-400px.png", alt: "portfolio-thumb"
               / Gallery Item Image
               .transparent-hover
               %span.plus-button
@@ -617,7 +616,7 @@
                   %a.icon-remove
                   .image-area
                     %a{:href => "http://international.ucr.edu"} 
-                    %img{alt: "portfolio-large-image", src: "images/proj-international-595px.png"}/
+                    = image_tag "images/proj-international-595px.png", alt: "portfolio-large-image"
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
@@ -675,7 +674,7 @@
           %li.gallery-item.all.apps
             / Add filter name as class
             .image-area
-              %img{alt: "portfolio-thumb", src: "images/proj-registrar-400px.png"}/
+              = image_tag "images/proj-registrar-400px.png", alt: "portfolio-thumb"
               / Gallery Item Image
               .transparent-hover
               %span.plus-button
@@ -692,7 +691,7 @@
                   %a.icon-remove
                   .image-area
                     %a{:href => "http://registrar.ucr.edu"} 
-                      %img{alt: "portfolio-large-image", src: "images/proj-registrar-595px.png"}/
+                      = image_tag "images/proj-registrar-595px.png", alt: "portfolio-thumb"
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
@@ -749,7 +748,7 @@
           %li.gallery-item.all.web
             / Add filter name as class
             .image-area
-              %img{alt: "portfolio-thumb", src: "images/proj-leroch-400px.png"}/
+              = image_tag "images/proj-leroch-400px.png", alt: "portfolio-thumb"
               / Gallery Item Image
               .transparent-hover
               %span.plus-button
@@ -766,7 +765,7 @@
                   %a.icon-remove
                   .image-area
                     %a{:href => "http://lerochlab.ucr.edu"} 
-                      %img{alt: "portfolio-large-image", src: "images/proj-leroch-595px.png"}/
+                      = image_tag "images/proj-leroch-595px.png", alt: "portfolio-large-image"
                     / Gallery Item Modal Window Image
                     .portfolio-nav
                       %button.gallery-prev &lt;
