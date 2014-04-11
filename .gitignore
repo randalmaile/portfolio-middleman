@@ -22,4 +22,7 @@
 # Do not spill private information
 /.env
 
+# Ignore New Relic logs
+/log
+
 .DS_Store
