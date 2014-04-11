@@ -5,7 +5,7 @@ require "lib/twitter_feed"
 ##
 activate :directory_indexes
 activate :twitter_feed
-
+activate :dotenv
 ###
 # Compass
 ###
@@ -42,7 +42,7 @@ activate :twitter_feed
 
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 set :file_watcher_ignore, [
@@ -68,6 +68,9 @@ activate :livereload
 #   end
 # end
 
+set :tumblr_api_key, ENV['TUMBLR_API_KEY']
+
+set :tumblr_hostname, ENV['TUMBLR_HOSTNAME']
 
 set :css_dir, 'stylesheets'
 
@@ -78,7 +81,7 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
   
-  activate :imageoptim 
+  # activate :imageoptim 
 
   # For example, change the Compass output style for deployment
   activate :minify_css
@@ -88,6 +91,9 @@ configure :build do
 
   # Enable cache buster
   activate :asset_hash
+
+  # pre-gzip files
+  activate :gzip, :exts => %w(.js .css .html .htm .json .rss .xml)
 
   # Use relative URLs
   # activate :relative_assets
