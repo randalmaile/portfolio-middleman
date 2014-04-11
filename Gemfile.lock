@@ -80,6 +80,7 @@ GEM
       sprockets-sass (~> 1.0.0)
     multi_json (1.9.2)
     multipart-post (2.0.0)
+    newrelic_rpm (3.7.1.180)
     rack (1.5.2)
     rack-livereload (0.3.15)
       rack
@@ -135,5 +136,6 @@ DEPENDENCIES
   middleman (~> 3.2.0)
   middleman-dotenv
   middleman-livereload (~> 3.1.0)
+  newrelic_rpm
   twitter
   twitter-text
