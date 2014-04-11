@@ -16,7 +16,7 @@
 # Ignore Sass' cache
 /.sass-cache
 
-# Ignore coderwall images
+# Ignore images
 /source/images/
 
 # Do not spill private information
