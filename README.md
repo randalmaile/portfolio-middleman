@@ -23,7 +23,7 @@ The site features custom responsive design elements, modern css-preprocessing, j
  - Custom responsive design architecture(handrolled)
  - [jQuery 1.10.2](http://jquery.com/)
  - Assorted jQuery plugins
- - javascript customization - responsive (handrolled)
+ - JavaScript customization - responsive (handrolled)
  - [Sass 3.2.1](http://sass-lang.com/)
  - [Webfonts - FontAwesome](http://fortawesome.github.io/Font-Awesome/)
  - [Tumblr - AJAX - Tumblr v2 API integration](https://github.com/matthewbuchanan/tumblr-kit)
